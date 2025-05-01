@@ -1,0 +1,88 @@
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Select } from "@/components/ui/select";
+import { Table } from "@/components/ui/table";
+
+const dummyData = [
+  {
+    username: "j.doe",
+    department: "Finance",
+    alerts: 4,
+    lastAccess: "2025-04-12 14:23",
+    risk: "High",
+  },
+  {
+    username: "m.leaks",
+    department: "Legal",
+    alerts: 6,
+    lastAccess: "2025-04-11 22:01",
+    risk: "Critical",
+  },
+  {
+    username: "a.tester",
+    department: "R&D",
+    alerts: 2,
+    lastAccess: "2025-04-12 08:40",
+    risk: "Medium",
+  },
+];
+
+const InsiderRiskDashboard = () => {
+  const [filter, setFilter] = useState("");
+
+  const filtered = dummyData.filter((user) =>
+    user.department.toLowerCase().includes(filter.toLowerCase())
+  );
+
+  return (
+    <div className="p-6 space-y-6">
+      <h2 className="text-2xl font-bold">🕵 Insider Risk Monitor</h2>
+
+      <Card>
+        <CardContent className="p-4 flex flex-col md:flex-row justify-between gap-4">
+          <div className="flex gap-4 items-center">
+            <label className="text-sm font-medium">Filter by Department:</label>
+            <Input
+              placeholder="e.g., Finance"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+              className="w-48"
+            />
+          </div>
+          <Button onClick={() => alert("📤 Export coming soon")}>Export Report</Button>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-0">
+          <Table className="min-w-full text-sm border">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left p-2 border">Username</th>
+                <th className="text-left p-2 border">Department</th>
+                <th className="text-left p-2 border"># Alerts</th>
+                <th className="text-left p-2 border">Last Access</th>
+                <th className="text-left p-2 border">Risk Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((user, i) => (
+                <tr key={i} className="hover:bg-gray-50">
+                  <td className="p-2 border font-medium">{user.username}</td>
+                  <td className="p-2 border">{user.department}</td>
+                  <td className="p-2 border">{user.alerts}</td>
+                  <td className="p-2 border">{user.lastAccess}</td>
+                  <td className="p-2 border text-red-600 font-semibold">{user.risk}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default InsiderRiskDashboard;

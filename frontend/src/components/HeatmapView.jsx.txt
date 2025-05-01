@@ -1,0 +1,51 @@
+import React, { useEffect, useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Loader } from "@/components/ui/loader";
+import { MapContainer, TileLayer, HeatmapLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+const HeatmapView = () => {
+  const [heatData, setHeatData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/data/disinfo_report.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const points = data.map((entry) => [entry.lat, entry.lon, entry.mentions]);
+        setHeatData(points);
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <Card className="p-6">
+      <CardContent>
+        <h2 className="text-xl font-bold mb-4">🔥 Disinformation Heatmap</h2>
+        {loading ? (
+          <Loader />
+        ) : (
+          <MapContainer center={[32.08, 34.78]} zoom={2} style={{ height: "600px", width: "100%" }}>
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <HeatmapLayer
+              fitBoundsOnLoad
+              fitBoundsOnUpdate
+              points={heatData}
+              longitudeExtractor={(m) => m[1]}
+              latitudeExtractor={(m) => m[0]}
+              intensityExtractor={(m) => m[2]}
+              radius={20}
+              blur={25}
+              max={100}
+            />
+          </MapContainer>
+        )}
+      </CardContent>
+    </Card>
+  );
+};
+
+export default HeatmapView;

@@ -1,0 +1,69 @@
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+
+const mockResults = [
+  { type: "user", name: "CryptoShark77", id: "user-001" },
+  { type: "user", name: "AnonZ", id: "user-002" },
+  { type: "group", name: "Crypto Leaks & Fraud Watch", id: "crypto-leaks" },
+  { type: "group", name: "PayNova Complaints", id: "paynova-complaints" },
+  { type: "keyword", name: "counterfeit", id: "k1" },
+];
+
+const GlobalSearch = () => {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    const filtered = mockResults.filter((r) =>
+      r.name.toLowerCase().includes(query.toLowerCase())
+    );
+    setResults(filtered);
+  };
+
+  const handleNavigate = (res) => {
+    if (res.type === "user") {
+      navigate(`/profile?id=${res.id}`);
+    } else if (res.type === "group") {
+      navigate(`/group/${res.id}`);
+    }
+  };
+
+  return (
+    <Card className="mt-6">
+      <CardContent className="p-6 space-y-6">
+        <h2 className="text-xl font-bold">Global Search</h2>
+        <div className="flex gap-4">
+          <Input
+            placeholder="Search user, group, keyword..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <Button onClick={handleSearch}>Search</Button>
+        </div>
+
+        {results.length > 0 && (
+          <ul className="space-y-2 mt-4">
+            {results.map((res, idx) => (
+              <li
+                key={idx}
+                onClick={() => handleNavigate(res)}
+                className="p-3 border rounded hover:bg-gray-50 cursor-pointer flex justify-between"
+              >
+                <span>
+                  <strong>{res.type.toUpperCase()}:</strong> {res.name}
+                </span>
+                <span className="text-sm text-muted-foreground">Click to view</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </CardContent>
+    </Card>
+  );
+};
+
+export default GlobalSearch;

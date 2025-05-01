@@ -1,0 +1,31 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Line } from "react-chartjs-2";
+
+const data = {
+  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  datasets: [
+    {
+      label: "Influence Score",
+      data: [20, 40, 60, 50, 70, 90, 85],
+      fill: false,
+      borderColor: "#3b82f6",
+      tension: 0.4,
+    },
+  ],
+};
+
+const InfluenceTrendChart = () => {
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">📊 Influence Trend Chart</h2>
+      <Card>
+        <CardContent className="p-4">
+          <Line data={data} />
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default InfluenceTrendChart;

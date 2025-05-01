@@ -1,0 +1,88 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+
+const CrisisResponseDashboard = () => {
+  const navigate = useNavigate();
+
+  const crisisEvents = [
+    {
+      id: 1,
+      title: "Cyber Attack on Banking Network",
+      severity: "High",
+      location: "Tel Aviv",
+      time: "2025-04-11 14:32",
+    },
+    {
+      id: 2,
+      title: "Protest Escalation in Central Square",
+      severity: "Medium",
+      location: "Jerusalem",
+      time: "2025-04-11 13:00",
+    },
+    {
+      id: 3,
+      title: "Supply Chain Disruption – Port Area",
+      severity: "Critical",
+      location: "Haifa",
+      time: "2025-04-10 22:15",
+    },
+  ];
+
+  const severityColor = {
+    High: "bg-yellow-300",
+    Medium: "bg-blue-300",
+    Critical: "bg-red-500 text-white",
+  };
+
+  return (
+    <div className="p-6 space-y-6">
+      <h2 className="text-2xl font-bold">🚨 Crisis Response Dashboard</h2>
+
+      <Card>
+        <CardContent className="p-4">
+          <table className="min-w-full text-sm border">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="p-2 border">Event</th>
+                <th className="p-2 border">Location</th>
+                <th className="p-2 border">Time</th>
+                <th className="p-2 border">Severity</th>
+                <th className="p-2 border">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {crisisEvents.map((event) => (
+                <tr key={event.id} className="hover:bg-gray-50">
+                  <td className="p-2 border">{event.title}</td>
+                  <td className="p-2 border">{event.location}</td>
+                  <td className="p-2 border">{event.time}</td>
+                  <td className={`p-2 border font-semibold ${severityColor[event.severity]}`}>
+                    {event.severity}
+                  </td>
+                  <td className="p-2 border text-center">
+                    <Button
+                      variant="outline"
+                      onClick={() => navigate(`/crisis-timeline?id=${event.id}`)}
+                    >
+                      View Timeline
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </CardContent>
+      </Card>
+
+      <div className="flex gap-4">
+        <Button onClick={() => navigate("/crisis-live-feed")}>Live Feed</Button>
+        <Button onClick={() => navigate("/crisis-heatmap")}>Crisis Heatmap</Button>
+        <Button onClick={() => navigate("/crisis-export")}>Export Report</Button>
+      </div>
+    </div>
+  );
+};
+
+export default CrisisResponseDashboard;

@@ -1,0 +1,22 @@
+{
+  "actorProfile": {
+    "name": "David Cohen",
+    "image": "/images/actor_placeholder.png",
+    "idNumber": "123456789",
+    "status": "Active",
+    "phones": ["+972-50-1234567"],
+    "emails": ["david.cohen@example.com"],
+    "address": "Tel Aviv, Israel",
+    "socials": ["Telegram", "Instagram", "LinkedIn"]
+  },
+  "actorConnections": [
+    { "id": "1", "name": "Sarah Cohen", "relation": "Spouse" },
+    { "id": "2", "name": "Michael Cohen", "relation": "Son" },
+    { "id": "3", "name": "Rachel Levi", "relation": "Sister" }
+  ],
+  "movementHistory": [
+    { "lat": 32.0853, "lng": 34.7818, "timestamp": "2025-04-25 10:30" }, 
+    { "lat": 31.7683, "lng": 35.2137, "timestamp": "2025-04-26 08:45" },
+    { "lat": 32.1093, "lng": 34.8555, "timestamp": "2025-04-26 12:15" }
+  ]
+}

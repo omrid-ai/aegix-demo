@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    { "id": "Anti-Fraud Analysts", "platform": "Telegram" },
+    { "id": "Dark Web Market Watchers", "platform": "Dark Web" },
+    { "id": "Political Trends Monitors", "platform": "X" },
+    { "id": "Financial Crime Hunters", "platform": "Facebook" },
+    { "id": "Disinformation Busters", "platform": "Telegram" }
+  ],
+  "links": [
+    { "source": "Anti-Fraud Analysts", "target": "Financial Crime Hunters" },
+    { "source": "Disinformation Busters", "target": "Political Trends Monitors" },
+    { "source": "Dark Web Market Watchers", "target": "Financial Crime Hunters" },
+    { "source": "Anti-Fraud Analysts", "target": "Disinformation Busters" }
+  ]
+}

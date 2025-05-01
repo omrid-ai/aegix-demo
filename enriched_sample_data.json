@@ -1,0 +1,20 @@
+[
+  {
+    "id": "entity001",
+    "entity_id": "company_a",
+    "related_entity_id": "person_1",
+    "feature": 15.2
+  },
+  {
+    "id": "entity002",
+    "entity_id": "company_b",
+    "related_entity_id": "person_2",
+    "feature": 10.8
+  },
+  {
+    "id": "entity003",
+    "entity_id": "company_c",
+    "related_entity_id": "person_3",
+    "feature": 22.1
+  }
+]

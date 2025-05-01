@@ -1,0 +1,90 @@
+// 📁 frontend/src/components/Broadcast/BroadcastManipulationDashboard.jsx
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Card, CardContent } from "@/components/ui/card";
+import { Table } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
+import { Select } from "@/components/ui/select";
+import { Link } from "react-router-dom";
+
+const BroadcastManipulationDashboard = () => {
+  const [manipulations, setManipulations] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [filter, setFilter] = useState("All");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("/api/broadcast/manipulation");
+        setManipulations(res.data);
+      } catch (err) {
+        console.error("Failed to fetch broadcast data", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const filtered = filter === "All" ? manipulations : manipulations.filter(m => m.type === filter);
+
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">📺 Broadcast Manipulation Monitor</h2>
+
+      <div className="flex justify-between mb-4">
+        <Select value={filter} onChange={(e) => setFilter(e.target.value)}>
+          <option value="All">All</option>
+          <option value="Framing">Framing</option>
+          <option value="Smearing">Smearing</option>
+          <option value="Disinfo">Disinformation</option>
+        </Select>
+
+        <div className="space-x-2">
+          <Button>Export CSV</Button>
+          <Button variant="outline">Export PDF</Button>
+        </div>
+      </div>
+
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <Card>
+          <CardContent>
+            <Table>
+              <thead>
+                <tr className="text-left">
+                  <th>📄 Headline</th>
+                  <th>📺 Channel</th>
+                  <th>🧠 Type</th>
+                  <th>🎯 Target</th>
+                  <th>⏰ Date</th>
+                  <th>🔍</th> {/* עמודת כפתור צפייה */}
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.map((item, idx) => (
+                  <tr key={idx}>
+                    <td>{item.headline}</td>
+                    <td>{item.channel}</td>
+                    <td>{item.type}</td>
+                    <td>{item.target}</td>
+                    <td>{item.timestamp}</td>
+                    <td>
+                      <Link to={`/broadcast/${item.id}`}>
+                        <Button size="sm" variant="outline">View Full Article</Button>
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  );
+};
+
+export default BroadcastManipulationDashboard;

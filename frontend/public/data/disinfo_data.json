@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "Bot X",
+      "group": 1
+    },
+    {
+      "id": "Channel A",
+      "group": 1
+    },
+    {
+      "id": "User Q",
+      "group": 1
+    },
+    {
+      "id": "Narrative 1",
+      "group": 2
+    },
+    {
+      "id": "Narrative 2",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "Bot X",
+      "target": "Narrative 1"
+    },
+    {
+      "source": "Channel A",
+      "target": "Narrative 1"
+    },
+    {
+      "source": "User Q",
+      "target": "Narrative 2"
+    }
+  ],
+  "messages": [
+    {
+      "source": "Bot X",
+      "text": "The regime is collapsing. It's happening now!",
+      "explanation": "This message is part of a coordinated narrative aiming to undermine government stability."
+    },
+    {
+      "source": "Channel A",
+      "text": "Breaking: Explosion reported, unconfirmed!",
+      "explanation": "Disinformation tactic to incite panic by spreading unverified breaking news."
+    },
+    {
+      "source": "User Q",
+      "text": "Why isn\u2019t anyone reporting this?!",
+      "explanation": "Amplification tactic to pressure others into resharing the disinformation narrative."
+    }
+  ]
+}

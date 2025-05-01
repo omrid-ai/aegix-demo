@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "id": "Bot X",
+      "type": "source"
+    },
+    {
+      "id": "Channel A",
+      "type": "source"
+    },
+    {
+      "id": "User Q",
+      "type": "source"
+    },
+    {
+      "id": "Narrative: Collapse",
+      "type": "narrative"
+    },
+    {
+      "id": "Narrative: Explosion",
+      "type": "narrative"
+    },
+    {
+      "id": "Narrative: Censorship",
+      "type": "narrative"
+    }
+  ],
+  "links": [
+    {
+      "source": "Bot X",
+      "target": "Narrative: Collapse"
+    },
+    {
+      "source": "Channel A",
+      "target": "Narrative: Explosion"
+    },
+    {
+      "source": "User Q",
+      "target": "Narrative: Censorship"
+    },
+    {
+      "source": "Bot X",
+      "target": "Narrative: Censorship"
+    },
+    {
+      "source": "Channel A",
+      "target": "Narrative: Collapse"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Rising Disinformation Trend",
+    "description": "Increase in false narratives related to financial markets.",
+    "sector": "Finance",
+    "severity": "High"
+  },
+  {
+    "title": "Foreign Actor Correlation",
+    "description": "Strong correlation detected between new user cluster and known threat actors.",
+    "sector": "Threat Intelligence",
+    "severity": "Medium"
+  },
+  {
+    "title": "Narrative Shift Detected",
+    "description": "Rapid sentiment change in Telegram groups regarding regulation policies.",
+    "sector": "Policy",
+    "severity": "Low"
+  }
+]

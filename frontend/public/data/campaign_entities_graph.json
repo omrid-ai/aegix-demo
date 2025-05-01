@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    { "id": "Russia Today", "group": 1 },
+    { "id": "Sputnik", "group": 1 },
+    { "id": "Bot-1234", "group": 2 },
+    { "id": "Bot-5678", "group": 2 },
+    { "id": "NGO-A", "group": 3 },
+    { "id": "Journalist-X", "group": 4 },
+    { "id": "FakeAccount99", "group": 2 },
+    { "id": "Campaign Operator", "group": 1 },
+    { "id": "Twitter Cluster", "group": 2 }
+  ],
+  "links": [
+    { "source": "Russia Today", "target": "Sputnik", "value": 1 },
+    { "source": "Russia Today", "target": "Campaign Operator", "value": 2 },
+    { "source": "Campaign Operator", "target": "Bot-1234", "value": 3 },
+    { "source": "Campaign Operator", "target": "Bot-5678", "value": 3 },
+    { "source": "Bot-1234", "target": "FakeAccount99", "value": 2 },
+    { "source": "Bot-5678", "target": "Twitter Cluster", "value": 2 },
+    { "source": "FakeAccount99", "target": "Journalist-X", "value": 1 },
+    { "source": "Journalist-X", "target": "NGO-A", "value": 1 }
+  ]
+}

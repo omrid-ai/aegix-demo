@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "Bot-Alpha",
+      "group": "bot"
+    },
+    {
+      "id": "Bot-Beta",
+      "group": "bot"
+    },
+    {
+      "id": "NewsNet",
+      "group": "media"
+    },
+    {
+      "id": "ForeignOrgX",
+      "group": "foreign"
+    },
+    {
+      "id": "CampaignCenter",
+      "group": "core"
+    },
+    {
+      "id": "Agent-47",
+      "group": "bot"
+    },
+    {
+      "id": "Forum123",
+      "group": "forum"
+    },
+    {
+      "id": "Influencer-Z",
+      "group": "individual"
+    }
+  ],
+  "links": [
+    {
+      "source": "Bot-Alpha",
+      "target": "CampaignCenter",
+      "type": "amplifies"
+    },
+    {
+      "source": "Bot-Beta",
+      "target": "CampaignCenter",
+      "type": "amplifies"
+    },
+    {
+      "source": "CampaignCenter",
+      "target": "NewsNet",
+      "type": "feeds"
+    },
+    {
+      "source": "CampaignCenter",
+      "target": "ForeignOrgX",
+      "type": "backed_by"
+    },
+    {
+      "source": "Agent-47",
+      "target": "CampaignCenter",
+      "type": "spreads"
+    },
+    {
+      "source": "Forum123",
+      "target": "Agent-47",
+      "type": "hosts"
+    },
+    {
+      "source": "Influencer-Z",
+      "target": "NewsNet",
+      "type": "boosts"
+    },
+    {
+      "source": "Bot-Alpha",
+      "target": "Forum123",
+      "type": "posts_in"
+    }
+  ]
+}

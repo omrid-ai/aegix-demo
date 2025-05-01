@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "Hydra Market",
+      "label": "Hydra Market",
+      "group": "platform"
+    },
+    {
+      "id": "Credit Card Dump",
+      "label": "Credit Card Dump",
+      "group": "listing"
+    },
+    {
+      "id": "RAMP Forum",
+      "label": "RAMP Forum",
+      "group": "platform"
+    },
+    {
+      "id": "Zero-Day Exploit",
+      "label": "Zero-Day Exploit",
+      "group": "listing"
+    },
+    {
+      "id": "World Market",
+      "label": "World Market",
+      "group": "platform"
+    },
+    {
+      "id": "Fake Passports",
+      "label": "Fake Passports",
+      "group": "listing"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Hydra Market",
+      "to": "Credit Card Dump"
+    },
+    {
+      "from": "RAMP Forum",
+      "to": "Zero-Day Exploit"
+    },
+    {
+      "from": "World Market",
+      "to": "Fake Passports"
+    }
+  ]
+}

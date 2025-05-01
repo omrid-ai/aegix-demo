@@ -1,0 +1,33 @@
+class AdminAccess:
+    def __init__(self):
+        # רשימת מזהי מנהלים (Admin User IDs)
+        self.admin_users = set()
+    
+    def add_admin(self, user_id):
+        """הוספת משתמש לרשימת המנהלים."""
+        self.admin_users.add(user_id)
+    
+    def remove_admin(self, user_id):
+        """הסרת משתמש מרשימת המנהלים."""
+        self.admin_users.discard(user_id)
+    
+    def is_admin(self, user_id):
+        """בדיקה אם משתמש הוא מנהל."""
+        return user_id in self.admin_users
+    
+    def enforce_admin_access(self, user_id):
+        """מונע גישה אם המשתמש אינו מנהל."""
+        if not self.is_admin(user_id):
+            raise PermissionError("גישה נדחתה: נדרש להיות מנהל.")
+
+# דוגמה לשימוש
+if __name__ == "__main__":
+    access_control = AdminAccess()
+    access_control.add_admin(123456789)  # הוספת מזהה מנהל לדוגמה
+    
+    user_id = 987654321  # מזהה משתמש לבדיקה
+    try:
+        access_control.enforce_admin_access(user_id)
+        print("גישה אושרה.")
+    except PermissionError as e:
+        print(e)

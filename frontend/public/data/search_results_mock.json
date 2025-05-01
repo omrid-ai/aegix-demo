@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Telegram Group on Election Fraud",
+    "snippet": "Discussion about irregularities in voting in Eastern Europe.",
+    "source": "Telegram",
+    "date": "2025-04-29",
+    "id": "Node1"
+  },
+  {
+    "title": "Forum Thread on Financial Crime in Israel",
+    "snippet": "Claims of suspicious activity in banking transfers.",
+    "source": "Forums",
+    "date": "2025-04-28",
+    "id": "Node2"
+  },
+  {
+    "title": "Dark Web Market Discussion on Corporate Leaks",
+    "snippet": "Selling internal files from a tech company.",
+    "source": "Darknet",
+    "date": "2025-04-27",
+    "id": "Node3"
+  },
+  {
+    "title": "Twitter Bot Network Promoting Misinformation",
+    "snippet": "Coordinated posts spreading false narratives.",
+    "source": "Twitter",
+    "date": "2025-04-29",
+    "id": "Node4"
+  },
+  {
+    "title": "Underground Bitcoin Mixer Detected",
+    "snippet": "",
+    "source": "Dark Web Market Crawler",
+    "date": "2025-04-29",
+    "id": "Node5"
+  },
+  {
+    "title": "Insider Leaks: Merger Between Two Fintech Firms",
+    "snippet": "",
+    "source": "Deep Forum Intelligence",
+    "date": "2025-04-28",
+    "id": "Node6"
+  },
+  {
+    "title": "Election Interference Plot on Telegram",
+    "snippet": "",
+    "source": "Telegram Monitor",
+    "date": "2025-04-27",
+    "id": "Node7"
+  }
+]

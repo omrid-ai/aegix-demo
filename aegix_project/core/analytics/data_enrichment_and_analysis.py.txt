@@ -1,0 +1,21 @@
+# core/analytics/data_enrichment_and_analysis.py
+
+from collections import Counter
+
+def analyze_search_results(results):
+    enriched = []
+    sentiment_counter = Counter()
+    keyword_counter = Counter()
+
+    for r in results:
+        keyword_counter[r["keyword"]] += 1
+        sentiment_counter[r["sentiment"]] += 1
+        enriched.append(r)
+
+    summary = {
+        "top_keywords": keyword_counter.most_common(5),
+        "sentiment_distribution": dict(sentiment_counter),
+        "total_results": len(results)
+    }
+
+    return enriched, summary

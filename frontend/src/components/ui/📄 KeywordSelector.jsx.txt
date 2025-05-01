@@ -1,0 +1,65 @@
+// 📁 File: components/ui/KeywordSelector.jsx
+
+import React, { useState } from "react";
+
+const KeywordSelector = ({ initialKeywords = [], onKeywordsChange }) => {
+  const [keywords, setKeywords] = useState(initialKeywords);
+  const [newKeyword, setNewKeyword] = useState("");
+
+  const handleAddKeyword = () => {
+    const trimmed = newKeyword.trim();
+    if (trimmed && !keywords.includes(trimmed)) {
+      const updated = [...keywords, trimmed];
+      setKeywords(updated);
+      onKeywordsChange(updated);
+      setNewKeyword("");
+    }
+  };
+
+  const handleRemoveKeyword = (word) => {
+    const updated = keywords.filter((kw) => kw !== word);
+    setKeywords(updated);
+    onKeywordsChange(updated);
+  };
+
+  return (
+    <div className="p-4 border rounded-xl bg-white shadow-sm">
+      <h3 className="font-semibold mb-2">Search Keywords</h3>
+
+      <div className="flex flex-wrap gap-2 mb-3">
+        {keywords.map((word, i) => (
+          <span
+            key={i}
+            className="px-3 py-1 bg-gray-100 border rounded-full text-sm flex items-center"
+          >
+            {word}
+            <button
+              className="ml-2 text-red-500 hover:text-red-700"
+              onClick={() => handleRemoveKeyword(word)}
+            >
+              ✕
+            </button>
+          </span>
+        ))}
+      </div>
+
+      <div className="flex gap-2">
+        <input
+          type="text"
+          value={newKeyword}
+          onChange={(e) => setNewKeyword(e.target.value)}
+          placeholder="Add keyword..."
+          className="border px-3 py-2 rounded w-full text-sm"
+        />
+        <button
+          onClick={handleAddKeyword}
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-sm"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default KeywordSelector;

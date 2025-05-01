@@ -1,0 +1,60 @@
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Select } from "@/components/ui/select";
+import { Table } from "@/components/ui/table";
+
+const mockData = [
+  { user: "RedLion", group: "Truth Front", influence: 87 },
+  { user: "AnonZ", group: "Open Resistance", influence: 72 },
+  { user: "CryptoFox", group: "Money Patriots", influence: 66 },
+];
+
+const InfluenceDrillView = () => {
+  const [filterGroup, setFilterGroup] = useState("");
+
+  const filtered = filterGroup
+    ? mockData.filter((d) => d.group === filterGroup)
+    : mockData;
+
+  return (
+    <div className="p-6 space-y-6">
+      <h2 className="text-2xl font-bold">📶 Influence Drill View</h2>
+
+      <Card>
+        <CardContent className="p-4 space-y-4">
+          <Select
+            label="Filter by Group"
+            value={filterGroup}
+            onChange={(e) => setFilterGroup(e.target.value)}
+          >
+            <option value="">All</option>
+            <option value="Truth Front">Truth Front</option>
+            <option value="Open Resistance">Open Resistance</option>
+            <option value="Money Patriots">Money Patriots</option>
+          </Select>
+
+          <Table>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Group</th>
+                <th>Influence Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((row, i) => (
+                <tr key={i}>
+                  <td>{row.user}</td>
+                  <td>{row.group}</td>
+                  <td>{row.influence}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default InfluenceDrillView;

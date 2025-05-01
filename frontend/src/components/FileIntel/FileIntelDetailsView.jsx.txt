@@ -1,0 +1,50 @@
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+const FileIntelDetailsView = () => {
+  const { filename } = useParams();
+  const [fileData, setFileData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchFileDetails = async () => {
+      try {
+        const response = await axios.get(`/api/files/intel/${filename}`);
+        setFileData(response.data);
+      } catch (error) {
+        console.error("Failed to fetch file details", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFileDetails();
+  }, [filename]);
+
+  if (loading) return <p className="p-6">🔄 Loading file details...</p>;
+  if (!fileData) return <p className="p-6 text-red-600">❌ File not found.</p>;
+
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">📂 File Intelligence Details</h2>
+      <Card className="mb-6">
+        <CardContent className="space-y-3 py-6">
+          <p><strong>📝 File Name:</strong> {fileData.filename}</p>
+          <p><strong>📡 Source:</strong> {fileData.source}</p>
+          <p><strong>⚠️ Risk Level:</strong> {fileData.risk_level}</p>
+          <p><strong>🕒 Timestamp:</strong> {new Date(fileData.timestamp).toLocaleString()}</p>
+          <p><strong>🔍 Keywords:</strong> {fileData.keywords.join(", ")}</p>
+          <p><strong>🧠 Content Snippet:</strong> {fileData.content_snippet}</p>
+          <a href={fileData.download_url} target="_blank" rel="noopener noreferrer">
+            <Button variant="default">📥 Download File</Button>
+          </a>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default FileIntelDetailsView;

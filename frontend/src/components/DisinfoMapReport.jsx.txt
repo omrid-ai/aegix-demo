@@ -1,0 +1,114 @@
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+const disinfoGroups = [
+  {
+    keyword: "deep state",
+    lat: 32.08,
+    lon: 34.78,
+    group: "Truth Revolution",
+    mentions: 82,
+    trend: "Increasing",
+    risk: "High",
+  },
+  {
+    keyword: "fake vaccine",
+    lat: 31.76,
+    lon: 35.21,
+    group: "Freedom Now",
+    mentions: 60,
+    trend: "Stable",
+    risk: "Medium",
+  },
+  {
+    keyword: "global banking control",
+    lat: 51.51,
+    lon: -0.13,
+    group: "Money Truth Channel",
+    mentions: 45,
+    trend: "Peaking",
+    risk: "High",
+  },
+];
+
+const DisinfoMapReport = () => {
+  const [filterRisk, setFilterRisk] = useState("All");
+
+  const filteredGroups =
+    filterRisk === "All"
+      ? disinfoGroups
+      : disinfoGroups.filter((g) => g.risk === filterRisk);
+
+  return (
+    <Card className="p-6">
+      <CardContent className="space-y-6">
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-bold">🗺️ Disinfo Map Report</h2>
+          <select
+            onChange={(e) => setFilterRisk(e.target.value)}
+            className="border p-1 rounded"
+          >
+            <option value="All">All Risks</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+
+        <MapContainer
+          center={[32.08, 34.78]}
+          zoom={5}
+          style={{ height: "400px", width: "100%" }}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution="© OpenStreetMap contributors"
+          />
+          {filteredGroups.map((group, i) => (
+            <Marker key={i} position={[group.lat, group.lon]}>
+              <Popup>
+                <strong>{group.group}</strong>
+                <br />
+                Mentions: {group.mentions}
+                <br />
+                Risk: {group.risk}
+                <br />
+                Trend: {group.trend}
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+
+        <div className="overflow-auto pt-6">
+          <table className="min-w-full text-sm border mt-4">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left p-2 border">Keyword</th>
+                <th className="text-left p-2 border">Group</th>
+                <th className="text-left p-2 border">Mentions</th>
+                <th className="text-left p-2 border">Trend</th>
+                <th className="text-left p-2 border">Risk Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredGroups.map((row, i) => (
+                <tr key={i} className="hover:bg-gray-50">
+                  <td className="p-2 border">{row.keyword}</td>
+                  <td className="p-2 border">{row.group}</td>
+                  <td className="p-2 border">{row.mentions}</td>
+                  <td className="p-2 border">{row.trend}</td>
+                  <td className="p-2 border font-semibold">{row.risk}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default DisinfoMapReport;

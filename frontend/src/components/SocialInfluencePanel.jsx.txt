@@ -1,0 +1,87 @@
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Table, TableHeader, TableRow, TableCell, TableBody } from "@/components/ui/table";
+
+const mockInfluencers = [
+  {
+    username: "CryptoKing",
+    id: "user001",
+    reachScore: 92,
+    groups: ["Crypto Signals", "Underground Traders"],
+    mentions: 34,
+  },
+  {
+    username: "FakeShekelDealer",
+    id: "user002",
+    reachScore: 87,
+    groups: ["Money Exchange TLV", "Counterfeit Watch"],
+    mentions: 29,
+  },
+  {
+    username: "AnonDealer22",
+    id: "user003",
+    reachScore: 84,
+    groups: ["Black Market Alerts", "Fake Bills Trade"],
+    mentions: 27,
+  },
+  {
+    username: "AltCashGuy",
+    id: "user004",
+    reachScore: 79,
+    groups: ["Fast Cash Deals", "CryptoLeaks"],
+    mentions: 21,
+  },
+];
+
+const SocialInfluencePanel = () => {
+  const [search, setSearch] = useState("");
+  const [filtered, setFiltered] = useState(mockInfluencers);
+
+  const handleSearch = () => {
+    const results = mockInfluencers.filter((u) =>
+      u.username.toLowerCase().includes(search.toLowerCase())
+    );
+    setFiltered(results);
+  };
+
+  return (
+    <Card className="mt-6">
+      <CardContent className="p-6 space-y-6">
+        <h2 className="text-xl font-bold">📡 Social Influence Tracker</h2>
+        <div className="flex gap-4">
+          <Input
+            placeholder="Search influencer..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <Button onClick={handleSearch}>Search</Button>
+        </div>
+
+        <Table className="mt-6">
+          <TableHeader>
+            <TableRow>
+              <TableCell>Username</TableCell>
+              <TableCell>Reach Score</TableCell>
+              <TableCell>Groups</TableCell>
+              <TableCell>Mentions</TableCell>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {filtered.map((user, idx) => (
+              <TableRow key={idx}>
+                <TableCell>{user.username}</TableCell>
+                <TableCell className="font-bold text-red-600">{user.reachScore}</TableCell>
+                <TableCell>{user.groups.join(", ")}</TableCell>
+                <TableCell>{user.mentions}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default SocialInfluencePanel;

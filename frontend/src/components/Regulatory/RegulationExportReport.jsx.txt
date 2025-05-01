@@ -1,0 +1,12 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+
+const RegulationExportReport = () => {
+  return (
+    <div className="mt-4">
+      <Button variant="default">📤 Export Regulation Report (PDF)</Button>
+    </div>
+  );
+};
+
+export default RegulationExportReport;

@@ -1,0 +1,42 @@
+// 📁 frontend/src/components/Realtime/RealtimeTrendsDashboard.jsx
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import ThreatItemCard from "./ThreatItemCard";
+
+const RealtimeTrendsDashboard = () => {
+  const [trends, setTrends] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchTrends = async () => {
+      try {
+        const response = await axios.get("/api/realtime/trends");
+        setTrends(response.data);
+      } catch (err) {
+        console.error("Failed to fetch trends", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTrends();
+  }, []);
+
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">📈 Real-Time Trends</h2>
+      {loading ? (
+        <p>Loading trends...</p>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {trends.map((item, idx) => (
+            <ThreatItemCard key={idx} item={item} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default RealtimeTrendsDashboard;

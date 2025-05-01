@@ -1,0 +1,73 @@
+{
+  "Law Enforcement": {
+    "Criminal Activities": {},
+    "Suspect Tracking": {},
+    "Incident Reports": {},
+    "Fraudulent Activities": {},
+    "Cyber Threats": {},
+    "Drug Trafficking": {},
+    "Organized Crime": {},
+    "Violent Offenses": {},
+    "Intelligence Reports": {},
+    "Wanted Persons": {},
+    "Traffic Violations": {},
+    "Emergency Alerts": {}
+  },
+  "Political Analysis": {
+    "Policy Changes": {},
+    "Election Monitoring": {},
+    "Geopolitical Risks": {},
+    "Political Sentiment": {},
+    "Legislation Tracking": {},
+    "Regional Stability": {},
+    "Campaign Strategy": {},
+    "Key Political Figures": {},
+    "Government Announcements": {},
+    "Public Opinion Trends": {},
+    "Diplomatic Relations": {},
+    "Protest Alerts": {}
+  },
+  "Business Intelligence": {
+    "Market Analysis": {},
+    "Competitor Tracking": {},
+    "Strategic Risks": {},
+    "Mergers and Acquisitions": {},
+    "Emerging Trends": {},
+    "Business Opportunities": {},
+    "Economic Indicators": {},
+    "Industry Reports": {},
+    "Key Players Analysis": {},
+    "Growth Potential": {},
+    "Investment Alerts": {},
+    "Reputation Monitoring": {}
+  },
+  "Financial Monitoring": {
+    "Regulatory Tracking": {},
+    "Fraud Detection": {},
+    "Suspicious": {},
+    "Compliance Check": {},
+    "Compliance": {},
+    "Alert Notifications": {},
+    "Fraud Alerts": {},
+    "Transaction": {},
+    "Regulatory": {},
+    "Risk Assessment": {}
+  },
+  "Communication and Journalism": {
+    "Fake News Monitoring": {},
+    "Media Sentiment Analysis": {},
+    "Influencer Tracking": {},
+    "Disinformation Campaigns": {},
+    "Public Opinion Analysis": {},
+    "Breaking News Alerts": {},
+    "Social media Trends": {},
+    "Crisis Reporting": {},
+    "Media Bias Detection": {},
+    "Journalist Safety Monitoring": {},
+    "Audience Engagement Metrics": {},
+    "Emerging Narrative Alerts": {},
+    "Global Media Coverage Reports": {},
+    "Platform-Specific Sentiment": {},
+    "Incident Impact Assessment": {}
+  }
+}

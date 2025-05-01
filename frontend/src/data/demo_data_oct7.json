@@ -1,0 +1,73 @@
+
+{
+  "campaign_name": "AEGIX Disinformation Report: 7.10 Crisis",
+  "start_date": "2023-10-07",
+  "narratives": [
+    {
+      "topic": "Israel committed genocide",
+      "first_appearance": "2023-10-07",
+      "peak_spread": "2023-10-09",
+      "platforms": ["Telegram", "Twitter", "TikTok"],
+      "risk_level": "High"
+    },
+    {
+      "topic": "Bombing of Hospitals",
+      "first_appearance": "2023-10-08",
+      "peak_spread": "2023-10-10",
+      "platforms": ["Telegram", "Facebook", "Instagram"],
+      "risk_level": "Medium"
+    }
+  ],
+  "images": [
+    {
+      "id": "img001",
+      "title": "Scared Syrian Child misused",
+      "original_date": "2014-12-15",
+      "original_context": "Syrian refugee camp, Atmeh",
+      "misused_context": "Gaza attacks 2023",
+      "first_misuse": "UNRWA 2017 campaign",
+      "recent_spread": "2023-10-08",
+      "thumbnail": "/images/thumbnails/scared_syrian_child_thumb.jpg",
+      "platforms": ["Telegram", "Twitter", "Instagram"],
+      "risk": "High Manipulation Risk"
+    }
+  ],
+  "groups": [
+    {
+      "id": "grp01",
+      "name": "GazaNewsNow",
+      "platform": "Telegram",
+      "members": 12300,
+      "risk_level": "High",
+      "linked_narratives": ["Israel committed genocide", "Bombing of Hospitals"]
+    }
+  ],
+  "actors": [
+    {
+      "id": "user01",
+      "username": "@Justice4Gaza",
+      "platform": "Twitter",
+      "followers": 34000,
+      "risk_level": "High",
+      "shared_fake_image": true
+    },
+    {
+      "id": "user02",
+      "username": "@FreePalestine2023",
+      "platform": "Telegram",
+      "followers": 8900,
+      "risk_level": "Medium",
+      "shared_fake_image": true
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2023-10-07",
+      "event": "Spike in 'Israel genocide' narrative on Telegram and X"
+    },
+    {
+      "date": "2023-10-09",
+      "event": "Fake Syrian child photo resurfaces on Instagram, TikTok"
+    }
+  ]
+}

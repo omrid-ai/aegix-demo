@@ -1,0 +1,35 @@
+// src/components/GeoAnalyticsMap.jsx
+import React from "react";
+import { MapContainer, TileLayer, Circle, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+const GeoAnalyticsMap = () => {
+  const users = [
+    { username: "CryptoShark", lat: 32.084, lon: 34.781, radius: 300 },
+    { username: "AnonZ", lat: 32.0855, lon: 34.7799, radius: 500 },
+    { username: "MrNova", lat: 32.0865, lon: 34.7822, radius: 400 },
+  ];
+
+  return (
+    <div className="mt-6 h-[400px] rounded-xl overflow-hidden border">
+      <MapContainer center={[32.0853, 34.7818]} zoom={15} style={{ height: "100%", width: "100%" }}>
+        <TileLayer
+          attribution='&copy; OpenStreetMap contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {users.map((u, idx) => (
+          <Circle
+            key={idx}
+            center={[u.lat, u.lon]}
+            radius={u.radius}
+            pathOptions={{ color: "red", fillOpacity: 0.5 }}
+          >
+            <Popup>{u.username}</Popup>
+          </Circle>
+        ))}
+      </MapContainer>
+    </div>
+  );
+};
+
+export default GeoAnalyticsMap;

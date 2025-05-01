@@ -1,0 +1,42 @@
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+const FileDetailScreen = () => {
+  const { filename } = useParams();
+  const [fileData, setFileData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchDetails = async () => {
+      try {
+        const response = await fetch("/api/files/intel");
+        const allFiles = await response.json();
+        const matched = allFiles.find((f) => f.filename === filename);
+        setFileData(matched || null);
+      } catch (err) {
+        console.error("Failed to load file details", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDetails();
+  }, [filename]);
+
+  if (loading) return <p className="p-6">Loading file details...</p>;
+
+  if (!fileData) {
+    return <p className="p-6 text-red-600">❌ File not found.</p>;
+  }
+
+  return (
+    <div className="p-6 space-y-4">
+      <h2 className="text-2xl font-bold">📄 File Details: {fileData.filename}</h2>
+
+      <Card>
+        <CardContent className="space-y-2">
+          <p><strong>📁 Source:</strong> {fileData.source}</p>
+          <p><strong>🔑 Keywords:</strong> {fileData.keywords.join(", ")}</p>
+          <p><strong>⚠️ Risk Level:</strong> {

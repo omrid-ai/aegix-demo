@@ -1,0 +1,26 @@
+[
+  {
+    "group_id": -1001234567890,
+    "group_name": "Cyber Threats TLV",
+    "riskLevel": "High",
+    "flaggedUsers": [
+      "user_001", "user_002"
+    ]
+  },
+  {
+    "group_id": -1002234567890,
+    "group_name": "Dark Web Exchangers",
+    "riskLevel": "Medium",
+    "flaggedUsers": [
+      "user_003"
+    ]
+  },
+  {
+    "group_id": -1003234567890,
+    "group_name": "Fake Docs Market",
+    "riskLevel": "High",
+    "flaggedUsers": [
+      "user_004", "user_005", "user_006"
+    ]
+  }
+]

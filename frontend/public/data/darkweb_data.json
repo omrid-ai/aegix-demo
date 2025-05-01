@@ -1,0 +1,31 @@
+
+[
+  {
+    "name": "WhiteHouse Market",
+    "url": "http://whitehousemarketxyz.onion",
+    "type": "Marketplace",
+    "risk": "High",
+    "lastSeen": "2025-04-24"
+  },
+  {
+    "name": "DarkLeak Club",
+    "url": "http://darkleakclubxyz.onion",
+    "type": "Data Leak",
+    "risk": "Medium",
+    "lastSeen": "2025-04-20"
+  },
+  {
+    "name": "SilkRoad 3.0",
+    "url": "http://silkroad30xyz.onion",
+    "type": "Drugs",
+    "risk": "Critical",
+    "lastSeen": "2025-04-22"
+  },
+  {
+    "name": "BlackBazaar",
+    "url": "http://blackbazaarxyz.onion",
+    "type": "Weapons",
+    "risk": "High",
+    "lastSeen": "2025-04-18"
+  }
+]

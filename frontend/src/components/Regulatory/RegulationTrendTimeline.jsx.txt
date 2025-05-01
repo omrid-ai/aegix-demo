@@ -1,0 +1,21 @@
+import React from "react";
+
+const RegulationTrendTimeline = () => {
+  const items = [
+    { date: "2025-04-12", event: "SEC published warning on DeFi risks" },
+    { date: "2025-04-10", event: "EU proposed data residency law" },
+  ];
+
+  return (
+    <div>
+      <h2 className="text-xl font-semibold mb-2">📅 Regulation Timeline</h2>
+      <ul className="list-disc pl-5">
+        {items.map((item, idx) => (
+          <li key={idx}>{item.date} – {item.event}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default RegulationTrendTimeline;

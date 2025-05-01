@@ -1,0 +1,53 @@
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+const FileDetailsView = () => {
+  const { filename } = useParams();
+  const [fileData, setFileData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchFileDetails = async () => {
+      try {
+        const response = await axios.get("/api/files/intel");
+        const found = response.data.find(
+          (file) => file.filename === decodeURIComponent(filename)
+        );
+        setFileData(found || null);
+      } catch (err) {
+        console.error("Error fetching file details:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFileDetails();
+  }, [filename]);
+
+  if (loading) return <p className="p-6">Loading file details...</p>;
+  if (!fileData) return <p className="p-6 text-red-600">File not found.</p>;
+
+  return (
+    <div className="p-6 space-y-4">
+      <h2 className="text-2xl font-bold">📄 File Details: {fileData.filename}</h2>
+      <Card>
+        <CardContent className="space-y-2">
+          <p><strong>📁 Source:</strong> {fileData.source}</p>
+          <p><strong>⚠️ Risk Level:</strong> {fileData.risk_level}</p>
+          <p><strong>🕒 Timestamp:</strong> {fileData.timestamp}</p>
+          <p><strong>🔑 Keywords:</strong> {fileData.keywords.join(", ")}</p>
+        </CardContent>
+      </Card>
+
+      <div className="space-x-3">
+        <Button variant="outline" onClick={() => window.history.back()}>⬅ Back</Button>
+        <Button onClick={() => alert("Download not implemented")}>Download File</Button>
+      </div>
+    </div>
+  );
+};
+
+export default FileDetailsView;

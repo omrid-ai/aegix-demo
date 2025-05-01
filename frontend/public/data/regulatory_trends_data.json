@@ -1,0 +1,20 @@
+[
+  {
+    "country": "Germany",
+    "sector": "Data Privacy",
+    "trend": "Expansion of GDPR enforcement",
+    "date": "2025-04-25"
+  },
+  {
+    "country": "USA",
+    "sector": "AI Regulation",
+    "trend": "Draft bill on AI usage disclosure",
+    "date": "2025-04-24"
+  },
+  {
+    "country": "Japan",
+    "sector": "Cybersecurity",
+    "trend": "New guidelines for critical infrastructure protection",
+    "date": "2025-04-23"
+  }
+]

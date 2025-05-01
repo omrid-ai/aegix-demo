@@ -1,0 +1,34 @@
+import React from "react";
+
+const RegulationSourceTable = () => {
+  const data = [
+    { source: "SEC", title: "Crypto Risk Alert", date: "2025-04-12" },
+    { source: "ESMA", title: "Short Selling Restrictions", date: "2025-04-11" },
+  ];
+
+  return (
+    <div>
+      <h2 className="text-xl font-semibold mb-2">📚 Regulation Sources</h2>
+      <table className="w-full text-sm border">
+        <thead>
+          <tr>
+            <th className="p-2">Source</th>
+            <th>Title</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, idx) => (
+            <tr key={idx} className="border-t">
+              <td className="p-2">{row.source}</td>
+              <td>{row.title}</td>
+              <td>{row.date}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default RegulationSourceTable;

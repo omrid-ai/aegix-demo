@@ -1,0 +1,22 @@
+{
+    "labels": ["2025-04-01", "2025-04-03", "2025-04-05", "2025-04-07", "2025-04-09", "2025-04-11"],
+    "datasets": [
+      {
+        "label": "Operation Tumult",
+        "data": [5, 20, 40, 35, 25, 10],
+        "borderColor": "#0ea5e9",
+        "backgroundColor": "rgba(14, 165, 233, 0.2)",
+        "fill": true,
+        "tension": 0.4
+      },
+      {
+        "label": "Project Eclipse",
+        "data": [3, 10, 25, 30, 28, 15],
+        "borderColor": "#a855f7",
+        "backgroundColor": "rgba(168, 85, 247, 0.2)",
+        "fill": true,
+        "tension": 0.4
+      }
+    ]
+  }
+  

@@ -1,0 +1,123 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Card, CardContent } from "@/components/ui/card";
+import { Table } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
+import { Select } from "@/components/ui/select";
+import { Link } from "react-router-dom";
+
+const FileIntelligenceDashboard = () => {
+  const [files, setFiles] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [riskFilter, setRiskFilter] = useState("All");
+
+  useEffect(() => {
+    const fetchFiles = async () => {
+      try {
+        const response = await axios.get("/api/files/intel");
+        setFiles(response.data);
+      } catch (err) {
+        console.error("Failed to fetch file intelligence", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFiles();
+  }, []);
+
+  const filteredFiles =
+    riskFilter === "All"
+      ? files
+      : files.filter((file) => file.risk_level === riskFilter);
+
+  const exportCSV = () => {
+    const csv = [
+      ["Filename", "Source", "Keywords", "Risk Level", "Timestamp"],
+      ...filteredFiles.map((f) => [
+        f.filename,
+        f.source,
+        f.keywords.join(", "),
+        f.risk_level,
+        f.timestamp,
+      ]),
+    ]
+      .map((row) => row.join(","))
+      .join("\n");
+
+    const blob = new Blob([csv], { type: "text/csv" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "file_intelligence_export.csv";
+    a.click();
+  };
+
+  const exportPDF = () => {
+    alert("🔧 PDF Export not implemented (you can use jsPDF)");
+  };
+
+  return (
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4">📂 File Intelligence Center</h2>
+
+      <div className="flex items-center justify-between mb-4">
+        <Select value={riskFilter} onChange={(e) => setRiskFilter(e.target.value)}>
+          <option value="All">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </Select>
+
+        <div className="space-x-3">
+          <Button onClick={exportCSV}>Export CSV</Button>
+          <Button onClick={exportPDF} variant="outline">Export PDF</Button>
+        </div>
+      </div>
+
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <Card>
+          <CardContent>
+            <Table>
+              <thead>
+                <tr className="text-left">
+                  <th>Filename</th>
+                  <th>Source</th>
+                  <th>Keywords</th>
+                  <th>Risk Level</th>
+                  <th>Time</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredFiles.map((file, idx) => (
+                  <tr key={idx}>
+                    <td>{file.filename}</td>
+                    <td>{file.source}</td>
+                    <td>{file.keywords.join(", ")}</td>
+                    <td>{file.risk_level}</td>
+                    <td>{file.timestamp}</td>
+                    <td className="space-x-2">
+                      {/* 🔍 מעבר למסך תוצאות כללי */}
+                      <Link to={`/search-results?query=${file.filename}`}>
+                        <Button size="sm" variant="outline">View</Button>
+                      </Link>
+
+                      {/* 📄 מעבר למסך פרטי הקובץ */}
+                      <Link to={`/file-intel/${encodeURIComponent(file.filename)}`}>
+                        <Button size="sm">Details</Button>
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  );
+};
+
+export default FileIntelligenceDashboard;

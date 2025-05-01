@@ -1,0 +1,36 @@
+2025-04-20 12:21:48,428 - שולף עדכונים מטלגרם...
+2025-04-20 12:21:48,674 - סך הכל 0 קבוצות נמצאו.
+2025-04-20 20:03:31,995 - שולף נתונים להעשרה...
+2025-04-21 00:04:38,887 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-21 00:04:38,887 - [33mPress CTRL+C to quit[0m
+2025-04-21 00:04:38,889 -  * Restarting with stat
+2025-04-21 00:04:40,903 -  * Debugger is active!
+2025-04-21 00:04:40,904 -  * Debugger PIN: 617-682-219
+2025-04-21 00:06:59,196 - 127.0.0.1 - - [21/Apr/2025 00:06:59] "GET /api/healthcheck HTTP/1.1" 200 -
+2025-04-21 00:06:59,214 - 127.0.0.1 - - [21/Apr/2025 00:06:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-21 00:08:00,534 - 127.0.0.1 - - [21/Apr/2025 00:08:00] "GET /api/default-query?sector=Finance&category=Fraud%20Detection HTTP/1.1" 200 -
+2025-04-21 08:42:54,758 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-21 08:42:54,758 - [33mPress CTRL+C to quit[0m
+2025-04-21 08:42:54,759 -  * Restarting with stat
+2025-04-21 08:42:56,773 -  * Debugger is active!
+2025-04-21 08:42:56,774 -  * Debugger PIN: 617-682-219
+2025-04-21 09:00:40,792 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-21 09:00:40,792 - [33mPress CTRL+C to quit[0m
+2025-04-21 09:00:40,793 -  * Restarting with stat
+2025-04-21 09:00:42,848 -  * Debugger is active!
+2025-04-21 09:00:42,849 -  * Debugger PIN: 617-682-219
+2025-04-21 10:00:21,971 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-21 10:00:21,971 - [33mPress CTRL+C to quit[0m
+2025-04-21 10:00:21,972 -  * Restarting with stat
+2025-04-21 10:00:23,968 -  * Debugger is active!
+2025-04-21 10:00:23,969 -  * Debugger PIN: 617-682-219
+2025-04-21 20:25:51,437 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-21 20:25:51,437 - [33mPress CTRL+C to quit[0m
+2025-04-21 20:25:51,438 -  * Restarting with stat
+2025-04-21 20:25:53,435 -  * Debugger is active!
+2025-04-21 20:25:53,436 -  * Debugger PIN: 617-682-219

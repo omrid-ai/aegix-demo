@@ -1,0 +1,21 @@
+import React from "react";
+
+const RegulationImpactRadar = () => {
+  const sectors = ["Finance", "Tech", "Crypto", "Healthcare"];
+  const scores = [85, 70, 90, 50];
+
+  return (
+    <div>
+      <h2 className="text-xl font-semibold mb-2">📡 Impact by Sector</h2>
+      <ul className="list-disc pl-5">
+        {sectors.map((sector, idx) => (
+          <li key={idx}>
+            {sector} – Risk Score: <strong>{scores[idx]}</strong>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default RegulationImpactRadar;

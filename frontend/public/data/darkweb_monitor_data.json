@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Credit Card Dump Listing",
+    "description": "Large batch of stolen credit card data uploaded on darknet forum.",
+    "source": "Hydra Market",
+    "date": "2025-04-28",
+    "category": "Financial",
+    "risk": "High"
+  },
+  {
+    "title": "Zero-Day Exploit Sale",
+    "description": "Unknown actor selling zero-day vulnerability for Windows 11.",
+    "source": "RAMP Forum",
+    "date": "2025-04-27",
+    "category": "Cyber Exploits",
+    "risk": "Critical"
+  },
+  {
+    "title": "Counterfeit Passport Services",
+    "description": "Multiple listings found offering forged EU and US passports.",
+    "source": "World Market",
+    "date": "2025-04-26",
+    "category": "Identity",
+    "risk": "Medium"
+  }
+]

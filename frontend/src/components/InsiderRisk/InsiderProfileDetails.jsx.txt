@@ -1,0 +1,35 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+
+const InsiderProfileDetails = ({ username = "j.doe" }) => {
+  const profile = {
+    username,
+    department: "Finance",
+    lastLogin: "2025-04-12 14:23",
+    alertCount: 4,
+    riskLevel: "High",
+    recentActions: ["Downloaded sensitive file", "Accessed client DB", "Late login"],
+  };
+
+  return (
+    <div className="p-6">
+      <h2 className="text-xl font-bold">🧠 Insider Profile: {profile.username}</h2>
+      <Card className="mt-4">
+        <CardContent className="p-4 space-y-2">
+          <p><strong>Department:</strong> {profile.department}</p>
+          <p><strong>Last Login:</strong> {profile.lastLogin}</p>
+          <p><strong>Risk Level:</strong> {profile.riskLevel}</p>
+          <p><strong>Recent Alerts:</strong> {profile.alertCount}</p>
+          <p className="mt-2 font-medium">Recent Actions:</p>
+          <ul className="list-disc ml-6 text-sm text-muted-foreground">
+            {profile.recentActions.map((action, i) => (
+              <li key={i}>{action}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default InsiderProfileDetails;

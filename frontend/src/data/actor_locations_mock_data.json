@@ -1,0 +1,7 @@
+{
+  "locations": [
+    { "lat": 32.0853, "lng": 34.7818, "city": "Tel Aviv", "country": "Israel", "date": "2025-04-24", "status": "Stay" },
+    { "lat": 31.7683, "lng": 35.2137, "city": "Jerusalem", "country": "Israel", "date": "2025-04-25", "status": "Entry" },
+    { "lat": 29.5581, "lng": 34.9482, "city": "Eilat", "country": "Israel", "date": "2025-04-26", "status": "Exit" }
+  ]
+}

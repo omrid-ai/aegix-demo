@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Spike in Disinformation",
+    "message": "Detected a 42% increase in hostile narrative mentions over the last 3 days.",
+    "severity": "high",
+    "timestamp": "Just now"
+  },
+  {
+    "title": "Bot Network Alert",
+    "message": "New bot accounts have started targeting regional discourse.",
+    "severity": "medium",
+    "timestamp": "5 min ago"
+  },
+  {
+    "title": "Fake News Campaign",
+    "message": "Multiple sources are distributing manipulated media.",
+    "severity": "high",
+    "timestamp": "12 min ago"
+  },
+  {
+    "title": "Suspicious Activity",
+    "message": "Unusual spike in coordinated shares across Telegram groups.",
+    "severity": "low",
+    "timestamp": "30 min ago"
+  }
+]

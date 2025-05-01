@@ -1,0 +1,12 @@
+import React from "react";
+import logo from "@/assets/LOGO.png";
+
+const Logo = ({ size = 150 }) => {
+  return (
+    <div className="flex justify-center items-center py-4">
+      <img src={logo} alt="AEGIX Logo" style={{ width: size, height: "auto" }} />
+    </div>
+  );
+};
+
+export default Logo;

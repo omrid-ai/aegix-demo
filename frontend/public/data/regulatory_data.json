@@ -1,0 +1,53 @@
+{
+  "labels": [
+    "Mar 24",
+    "Apr 1",
+    "Apr 9",
+    "Apr 14",
+    "Apr 21"
+  ],
+  "datasets": [
+    {
+      "label": "High",
+      "data": [
+        25,
+        30,
+        32,
+        38,
+        40
+      ],
+      "borderColor": "#ef4444",
+      "backgroundColor": "rgba(239, 68, 68, 0.4)",
+      "fill": true,
+      "tension": 0.4
+    },
+    {
+      "label": "Medium",
+      "data": [
+        18,
+        20,
+        25,
+        26,
+        28
+      ],
+      "borderColor": "#eab308",
+      "backgroundColor": "rgba(234, 179, 8, 0.4)",
+      "fill": true,
+      "tension": 0.4
+    },
+    {
+      "label": "Low",
+      "data": [
+        5,
+        7,
+        8,
+        10,
+        12
+      ],
+      "borderColor": "#22c55e",
+      "backgroundColor": "rgba(34, 197, 94, 0.4)",
+      "fill": true,
+      "tension": 0.4
+    }
+  ]
+}

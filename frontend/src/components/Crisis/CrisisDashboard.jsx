@@ -1,0 +1,1 @@
+export default () => <h2>🚨 Crisis Response Center</h2>;

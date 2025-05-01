@@ -1,0 +1,105 @@
+#################################
+# 🔧 DEBUGGING & SYSTEM SETTINGS
+#################################
+DEBUG=True
+LOG_LEVEL=INFO
+
+#################################
+# 🔐 AEGIX API ACCESS & LIMITS
+#################################
+API_KEY=supersecretapikey
+API_RATE_LIMIT=1000
+
+#################################
+# 🗄️ DATABASE CONFIGURATION
+#################################
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=aegix_db
+DB_USER=postgres
+DB_PASSWORD=password
+
+#################################
+# 🤖 TELEGRAM SETTINGS
+#################################
+TELEGRAM_API_ID=25477801
+TELEGRAM_API_HASH=1328dc13fdcff643d163a5985c2cd97d
+TELEGRAM_PHONE="+972559811720"
+TELEGRAM_SESSION_NAME=my_session
+
+#################################
+# 🌍 GEOLOCATION SETTINGS
+#################################
+CENTRAL_LAT=32.0853
+CENTRAL_LON=34.7818
+MAX_DISTANCE_METERS=2000
+
+#################################
+# 🧠 AI & MODEL SETTINGS
+#################################
+MODEL_PATH=data/random_forest_model.pkl
+EXPORT_PATH=export/reports
+
+#################################
+# 🔐 ADMIN LOGIN
+#################################
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=admin123
+
+#################################
+# ⚠️ FEATURE TOGGLES
+#################################
+ENABLE_THREAT_ALERTS=True
+ENABLE_GEO_ANALYTICS=True
+ENABLE_EXPORT_FEATURE=True
+
+#################################
+# 🧠 EXTERNAL AI / NLP PROVIDERS
+#################################
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+HF_API_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#################################
+# 🐤 TWITTER/X
+#################################
+TWITTER_BEARER_TOKEN=your_twitter_bearer_token
+
+#################################
+# 🐙 REDDIT API
+#################################
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+REDDIT_USER_AGENT=AEGIX-Agent
+
+#################################
+# 📺 YOUTUBE API
+#################################
+YOUTUBE_API_KEY=your_youtube_api_key
+
+#################################
+# 📊 FINANCIAL DATA (Alpha Vantage)
+#################################
+ALPHA_VANTAGE_KEY=your_alpha_vantage_key
+
+#################################
+# 🧪 VIRUSTOTAL – Threat/Breach Detection
+#################################
+VT_API_KEY=your_virustotal_api_key
+
+#################################
+# 🌐 PUBLICWWW – Code Snippet / Domain Search
+#################################
+PUBLICWWW_API_KEY=your_publicwww_api_key
+
+#################################
+# 📰 NEWSAPI – News Article Monitoring
+#################################
+NEWSAPI_KEY=your_newsapi_key
+
+#################################
+# 📘 META GRAPH API – Facebook & Instagram
+#################################
+META_ACCESS_TOKEN=your_meta_access_token
+META_APP_ID=your_meta_app_id
+META_APP_SECRET=your_meta_app_secret
+META_GRAPH_VERSION=v18.0

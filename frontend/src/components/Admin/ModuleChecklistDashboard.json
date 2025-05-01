@@ -1,0 +1,137 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Table, Thead, Tbody, Tr, Th, Td } from "@/components/ui/table";
+import { Badge } from "@/components/ui/badge";
+
+const modules = [
+  {
+    name: "Dashboard",
+    route: "/dashboard",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Smart Category Search",
+    route: "/category-search/:sector/:category",
+    api: true,
+    pdf: false,
+    alert: false,
+    live: true,
+  },
+  {
+    name: "AI Recommendations",
+    route: "/ai-recommendations",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Enrichment Dashboard",
+    route: "/enrichment-dashboard",
+    api: true,
+    pdf: true,
+    alert: false,
+    live: false,
+  },
+  {
+    name: "Narrative Warfare",
+    route: "/narrative-dashboard",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Threat Actor Intelligence",
+    route: "/actor-dashboard",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Chat Intelligence",
+    route: "/chat-summary",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Campaign Intelligence",
+    route: "/campaign-dashboard",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Crisis Response",
+    route: "/crisis-dashboard",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Data Leak Hunter",
+    route: "/data-leak-dashboard",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: true,
+  },
+  {
+    name: "Admin Dashboard",
+    route: "/admin-settings",
+    api: true,
+    pdf: true,
+    alert: true,
+    live: false,
+  },
+];
+
+const statusBadge = (status) => (
+  <Badge className={status ? "bg-green-500" : "bg-red-500"}>{status ? "Yes" : "No"}</Badge>
+);
+
+const ModuleChecklistDashboard = () => {
+  return (
+    <div className="p-6 space-y-4">
+      <h2 className="text-2xl font-bold">📋 AEGIX System Module Checklist</h2>
+      <Card>
+        <CardContent>
+          <Table>
+            <Thead>
+              <Tr>
+                <Th>Module</Th>
+                <Th>Route</Th>
+                <Th>API</Th>
+                <Th>PDF Export</Th>
+                <Th>Alerts</Th>
+                <Th>Live Data</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {modules.map((mod, idx) => (
+                <Tr key={idx}>
+                  <Td>{mod.name}</Td>
+                  <Td className="text-xs text-gray-600">{mod.route}</Td>
+                  <Td>{statusBadge(mod.api)}</Td>
+                  <Td>{statusBadge(mod.pdf)}</Td>
+                  <Td>{statusBadge(mod.alert)}</Td>
+                  <Td>{statusBadge(mod.live)}</Td>
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default ModuleChecklistDashboard;

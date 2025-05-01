@@ -1,0 +1,78 @@
+import React, { useEffect, useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Select, SelectTrigger, SelectContent, SelectItem } from "@/components/ui/select";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+
+const InfluenceTrendView = () => {
+  const [data, setData] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState("Israel");
+
+  const fetchData = async () => {
+    try {
+      const res = await fetch("http://localhost:5051/api/influence-trends");
+      const raw = await res.json();
+      setData(raw);
+    } catch (err) {
+      console.error("Error fetching influence trends:", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const countries = [...new Set(data.map(item => item.country))];
+
+  const keywords = [...new Set(data.map(item => item.keyword))];
+
+  const filtered = keywords.map(keyword => {
+    const series = data
+      .filter(item => item.country === selectedCountry && item.keyword === keyword)
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
+    return { keyword, series };
+  });
+
+  return (
+    <Card className="mt-6">
+      <CardContent className="p-6 space-y-6">
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-bold">📈 Influence Trend View</h2>
+          <div className="w-48">
+            <Select defaultValue={selectedCountry} onValueChange={setSelectedCountry}>
+              <SelectTrigger>{selectedCountry}</SelectTrigger>
+              <SelectContent>
+                {countries.map((c, idx) => (
+                  <SelectItem key={idx} value={c}>
+                    {c}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+
+        <ResponsiveContainer width="100%" height={400}>
+          <LineChart>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="date" type="category" allowDuplicatedCategory={false} />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            {filtered.map((f, idx) => (
+              <Line
+                key={idx}
+                type="monotone"
+                dataKey="mentions"
+                data={f.series}
+                name={f.keyword}
+                stroke={`hsl(${(idx * 60) % 360}, 70%, 50%)`}
+              />
+            ))}
+          </LineChart>
+        </ResponsiveContainer>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default InfluenceTrendView;

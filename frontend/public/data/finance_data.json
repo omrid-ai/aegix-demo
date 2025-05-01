@@ -1,0 +1,20 @@
+
+{
+  "summary": {
+    "totalAlerts": 27,
+    "anomalyAmountUSD": 98423,
+    "flaggedGroups": 5
+  },
+  "anomalyTrend": [
+    { "date": "Oct 7", "count": 3 },
+    { "date": "Oct 8", "count": 5 },
+    { "date": "Oct 9", "count": 10 },
+    { "date": "Oct 10", "count": 6 },
+    { "date": "Oct 11", "count": 3 }
+  ],
+  "suspiciousEntities": [
+    { "name": "CryptoBazar TG", "platform": "Telegram", "risk": "High" },
+    { "name": "DarkFunds2023", "platform": "X", "risk": "Medium" },
+    { "name": "PalMoneyX", "platform": "Instagram", "risk": "High" }
+  ]
+}

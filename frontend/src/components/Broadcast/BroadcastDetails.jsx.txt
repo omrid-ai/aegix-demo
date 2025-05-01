@@ -1,0 +1,36 @@
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { Card, CardContent } from "@/components/ui/card";
+
+const BroadcastDetails = () => {
+  const { id } = useParams();
+  const [broadcast, setBroadcast] = useState(null);
+
+  useEffect(() => {
+    const fetchBroadcast = async () => {
+      const res = await axios.get(`/api/broadcast/${id}`);
+      setBroadcast(res.data);
+    };
+
+    fetchBroadcast();
+  }, [id]);
+
+  if (!broadcast) return <p className="p-6">Loading...</p>;
+
+  return (
+    <div className="p-6 space-y-4">
+      <h2 className="text-2xl font-bold">{broadcast.title}</h2>
+      <p className="text-gray-700">{broadcast.content}</p>
+      <Card>
+        <CardContent>
+          <p><strong>Source:</strong> {broadcast.source}</p>
+          <p><strong>Date:</strong> {broadcast.date}</p>
+          <p><strong>Detected Narratives:</strong> {broadcast.narratives.join(", ")}</p>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default BroadcastDetails;

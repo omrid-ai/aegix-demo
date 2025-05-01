@@ -1,0 +1,20 @@
+# 🐍 Image בסיס - גרסה תואמת ל-Telethon ופייתון
+FROM python:3.10-slim
+
+# 🏗 צור תיקיית עבודה
+WORKDIR /app
+
+# 📦 העתק את כל הקבצים לתוך התיקייה
+COPY . .
+
+# 📋 התקנת תלויות
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 🔧 התקנת כלי לניהול משתני סביבה
+RUN pip install python-dotenv
+
+# 📡 פתיחת פורט 5000 ל-Flask
+EXPOSE 5000
+
+# 🚀 הרצה
+CMD ["python", "main.py", "api"]

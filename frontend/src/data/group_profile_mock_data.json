@@ -1,0 +1,33 @@
+{
+  "name": "Disinformation Busters",
+  "platform": "Telegram",
+  "members": 157,
+  "lastActive": "2025-04-26 18:00",
+  "weekActivity": [
+    { "day": "Sun", "activity": 4 },
+    { "day": "Mon", "activity": 1 },
+    { "day": "Tue", "activity": 7 },
+    { "day": "Wed", "activity": 3 },
+    { "day": "Thu", "activity": 5 },
+    { "day": "Fri", "activity": 2 },
+    { "day": "Sat", "activity": 6 }
+  ],
+  "activity": [
+    { "date": "2025-04-26 18:00", "description": "New Member Joined" },
+    { "date": "2025-04-26 17:45", "description": "Post: Exposing Fake News" },
+    { "date": "2025-04-26 16:30", "description": "New Channel Opened" },
+    { "date": "2025-04-26 15:00", "description": "Internal Coordination Meeting" },
+    { "date": "2025-04-25 20:00", "description": "New Strategic Partnership" },
+    { "date": "2025-04-25 18:00", "description": "New Video Release" },
+    { "date": "2025-04-25 12:00", "description": "Fact Check Operation Launched" },
+    { "date": "2025-04-24 22:00", "description": "Disinformation Report Published" },
+    { "date": "2025-04-24 19:00", "description": "Alert: Suspected Fake Account" },
+    { "date": "2025-04-24 14:30", "description": "Event: Media Strategy Briefing" }
+  ],
+  "topUsers": [
+    { "username": "Alice123", "posts": 56 },
+    { "username": "Bob_T", "posts": 43 },
+    { "username": "CyberWolf", "posts": 39 },
+    { "username": "DataQueen", "posts": 35 }
+  ]
+}

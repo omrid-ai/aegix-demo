@@ -1,0 +1,64 @@
+{
+  "actorProfile": {
+    "name": "Omar Al-Tikriti",
+    "idNumber": "ID98234517",
+    "address": "Baghdad, Iraq",
+    "phones": [
+      "+964 781 234 5678",
+      "+964 770 123 4567"
+    ],
+    "emails": [
+      "omar.tikriti@example.com",
+      "contact@tikriti-network.org"
+    ],
+    "socials": [
+      "@tikriti_iraq",
+      "fb.com/omar.tikriti"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Anonymous_emblem.svg/2048px-Anonymous_emblem.svg.png"
+  },
+  "actorConnections": [
+    {
+      "id": 1,
+      "name": "Fatima Al-Tikriti",
+      "relation": "Sister"
+    },
+    {
+      "id": 2,
+      "name": "Hassan Al-Tikriti",
+      "relation": "Brother"
+    },
+    {
+      "id": 3,
+      "name": "Mohammed Al-Tikriti",
+      "relation": "Cousin"
+    }
+  ],
+  "movementHistory": [
+    {
+      "lat": 33.3152,
+      "lng": 44.3661,
+      "timestamp": "2025-04-10 09:00"
+    },
+    {
+      "lat": 34.0151,
+      "lng": 43.1111,
+      "timestamp": "2025-04-12 14:30"
+    },
+    {
+      "lat": 36.1901,
+      "lng": 44.0096,
+      "timestamp": "2025-04-15 17:45"
+    },
+    {
+      "lat": 31.9614,
+      "lng": 35.9239,
+      "timestamp": "2025-04-18 11:10"
+    },
+    {
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "timestamp": "2025-04-22 08:50"
+    }
+  ]
+}

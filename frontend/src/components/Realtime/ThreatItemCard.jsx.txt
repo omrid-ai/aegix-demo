@@ -1,0 +1,19 @@
+// 📁 frontend/src/components/Realtime/ThreatItemCard.jsx
+
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+
+const ThreatItemCard = ({ item }) => {
+  return (
+    <Card className="bg-white shadow rounded-xl">
+      <CardContent className="p-4 space-y-2">
+        <h3 className="text-lg font-semibold">{item.title}</h3>
+        <p className="text-sm text-gray-600">Source: {item.source}</p>
+        <p className="text-sm text-gray-600">Detected: {item.timestamp}</p>
+        <p className="text-sm">{item.summary}</p>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default ThreatItemCard;

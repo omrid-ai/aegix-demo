@@ -1,0 +1,79 @@
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+
+const AdminSettingsPanel = () => {
+  const [users, setUsers] = useState([
+    { username: "admin", role: "superadmin", active: true },
+    { username: "osint_analyst", role: "analyst", active: true },
+  ]);
+
+  const [toggles, setToggles] = useState({
+    threatAlerts: true,
+    geoAnalytics: true,
+    exportFeature: true,
+  });
+
+  const toggleFeature = (feature) => {
+    setToggles((prev) => ({ ...prev, [feature]: !prev[feature] }));
+  };
+
+  return (
+    <Card className="mt-6">
+      <CardContent className="space-y-6 p-6">
+        <h2 className="text-xl font-bold">⚙️ Admin Settings</h2>
+
+        <section>
+          <h3 className="text-md font-semibold mb-2">System Feature Toggles</h3>
+          <div className="grid grid-cols-3 gap-4">
+            <label className="flex items-center gap-2">
+              <Switch
+                checked={toggles.threatAlerts}
+                onCheckedChange={() => toggleFeature("threatAlerts")}
+              />
+              Threat Alerts
+            </label>
+            <label className="flex items-center gap-2">
+              <Switch
+                checked={toggles.geoAnalytics}
+                onCheckedChange={() => toggleFeature("geoAnalytics")}
+              />
+              Geo Analytics
+            </label>
+            <label className="flex items-center gap-2">
+              <Switch
+                checked={toggles.exportFeature}
+                onCheckedChange={() => toggleFeature("exportFeature")}
+              />
+              Export Reports
+            </label>
+          </div>
+        </section>
+
+        <section className="mt-6">
+          <h3 className="text-md font-semibold mb-2">Manage Admin Users</h3>
+          <ul className="space-y-2">
+            {users.map((user, i) => (
+              <li key={i} className="flex justify-between p-3 border rounded">
+                <span>
+                  <strong>{user.username}</strong> ({user.role})
+                </span>
+                <span className={`text-sm ${user.active ? "text-green-600" : "text-red-500"}`}>
+                  {user.active ? "Active" : "Inactive"}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4 flex gap-2">
+            <Input placeholder="New Username" />
+            <Button>Add Admin</Button>
+          </div>
+        </section>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default AdminSettingsPanel;

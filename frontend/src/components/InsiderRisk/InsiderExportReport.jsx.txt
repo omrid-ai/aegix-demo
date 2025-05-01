@@ -1,0 +1,25 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+const InsiderExportReport = () => {
+  const handleExport = () => {
+    alert("📄 Export to CSV/PDF coming soon!");
+  };
+
+  return (
+    <div className="p-6">
+      <Card>
+        <CardContent className="p-4 flex items-center justify-between">
+          <div>
+            <h3 className="text-lg font-semibold">📁 Export Insider Risk Report</h3>
+            <p className="text-sm text-muted-foreground">Generate detailed report by user or department</p>
+          </div>
+          <Button onClick={handleExport}>Export Report</Button>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default InsiderExportReport;
