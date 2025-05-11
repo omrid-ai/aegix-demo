@@ -8,6 +8,7 @@ import yfinance as yf
 import quandl
 from dotenv import load_dotenv
 from fpdf import FPDF  
+import json
 
 # 🔐 Load .env variables
 load_dotenv()
@@ -27,12 +28,14 @@ from aegix_project.analytics.geo_distance_calculator import calculate_user_dista
 
 from aegix_project.core.api.default_query_api import default_query_api
 from aegix_project.core.api.search_query_api import search_query_api
-# מוּסָר import שגוי => from aegix_project.core.api.alerts_api import alerts_api
 from aegix_project.core.api.broadcast_routes import broadcast_api
 from aegix_project.core.api.fileintel_routes import fileintel_api
 
 from aegix_project.core.alert_engine.alert_scheduler import run_alert_engine
 from aegix_project.core.alert_engine.alert_storage import get_all_alerts
+
+# ✅ NEW: AI Insights API
+from aegix_project.api.ai_insights_api import ai_insights_api
 
 # 🧠 Flask App Setup
 app = Flask(__name__)
@@ -42,6 +45,7 @@ app.register_blueprint(default_query_api)
 app.register_blueprint(search_query_api)
 app.register_blueprint(broadcast_api)
 app.register_blueprint(fileintel_api)
+app.register_blueprint(ai_insights_api)
 
 # 🚀 Flask API Server
 def run_flask_app():
@@ -68,15 +72,12 @@ def run_pipeline():
     print("📤 Report exported successfully")
 
 # 📍 Distance Report Exporter
-import json
-
 def run_export():
     print("📤 Generating user distance report...")
 
     center_location = (32.0853, 34.7818)  # תל אביב
     users = []
 
-    # Load users from telegram_groups.json
     try:
         with open("telegram_groups.json", "r", encoding="utf-8") as f:
             groups_data = json.load(f)
@@ -86,7 +87,7 @@ def run_export():
                     for user_id in flagged_users:
                         users.append({
                             "id": user_id,
-                            "location": (32.08, 34.78)  # ⛔ דמה: אפשר לעדכן לפי נתונים אמיתיים אם קיימים
+                            "location": (32.08, 34.78)  # ⛔ דמה
                         })
         print(f"✅ Loaded {len(users)} flagged users from JSON")
     except Exception as e:

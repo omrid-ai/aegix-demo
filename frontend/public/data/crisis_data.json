@@ -1,35 +1,4 @@
-
-{
-  "summary": {
-    "totalIncidents": 12,
-    "highSeverity": 4,
-    "regionsAffected": 3
-  },
-  "timeline": [
-    { "date": "Oct 7", "count": 2 },
-    { "date": "Oct 8", "count": 3 },
-    { "date": "Oct 9", "count": 4 },
-    { "date": "Oct 10", "count": 2 },
-    { "date": "Oct 11", "count": 1 }
-  ],
-  "alerts": [
-    {
-      "type": "Cyber Intrusion",
-      "description": "Attempted breach on municipal server",
-      "severity": "High",
-      "timestamp": "2023-10-09 14:32"
-    },
-    {
-      "type": "Disinformation Surge",
-      "description": "Fake evacuation order circulated",
-      "severity": "Medium",
-      "timestamp": "2023-10-10 08:10"
-    },
-    {
-      "type": "Physical Security",
-      "description": "Suspicious individual near critical site",
-      "severity": "High",
-      "timestamp": "2023-10-10 21:45"
-    }
-  ]
-}
+[
+  { "location": "Tel Aviv", "lat": 32.0853, "lng": 34.7818, "severity": "high" },
+  { "location": "New York", "lat": 40.7128, "lng": -74.0060, "severity": "medium" }
+]

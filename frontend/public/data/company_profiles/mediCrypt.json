@@ -1,0 +1,76 @@
+{
+  "name": "MediCrypt",
+  "risk_matrix": [
+    {
+      "area": "Narratives",
+      "risk": "High",
+      "note": "Multiple negative narratives detected"
+    },
+    {
+      "area": "Leadership",
+      "risk": "Medium",
+      "note": "CTO flagged for controversial activity"
+    },
+    {
+      "area": "Legal",
+      "risk": "High",
+      "note": "Detected data leak and possible IP issues"
+    },
+    {
+      "area": "Product",
+      "risk": "Medium",
+      "note": "Negative sentiment in reviews"
+    }
+  ],
+  "narratives": [
+    {
+      "id": "narr_003",
+      "title": "MediCrypt security breach at EU MedTech Summit",
+      "sentiment": "negative",
+      "trend_score": 87,
+      "source": "Twitter"
+    }
+  ],
+  "employees": [
+    {
+      "id": "cto_001",
+      "name": "Dr. Alex Ravitz",
+      "role": "CTO",
+      "risk_flags": [
+        "anonymous activity",
+        "forum controversy"
+      ],
+      "platforms": [
+        "LinkedIn",
+        "Twitter"
+      ]
+    }
+  ],
+  "leaks": [
+    {
+      "id": "leak_021",
+      "file_name": "medicrypt_users.zip",
+      "risk_level": "high",
+      "discovered_on": "darkweb",
+      "detected_by": "DataLeakHunter"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp_014",
+      "title": "CyberBio criticizes MediCrypt encryption",
+      "type": "hostile",
+      "launch_date": "2025-03-12",
+      "platform": "Blog + Twitter",
+      "target": "MediCrypt"
+    }
+  ],
+  "market_sentiment": {
+    "overall": "negative",
+    "regions": {
+      "Germany": -0.7,
+      "Israel": -0.5,
+      "UK": -0.3
+    }
+  }
+}

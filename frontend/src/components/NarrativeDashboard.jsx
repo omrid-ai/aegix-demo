@@ -52,7 +52,7 @@ const NarrativeDashboard = () => {
       <h1 className="text-3xl font-bold mb-6">🧠 Narrative Dashboard</h1>
 
       <div className="mb-8">
-        <canvas
+        <canvas style={{ maxHeight: "200px", maxWidth: "100%" }}
           id="narrativeTrendChart"
           className="bg-white rounded-lg h-64 w-full"
         ></canvas>

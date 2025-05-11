@@ -1,0 +1,20 @@
+[
+  {
+    "employee": "Carol Jones",
+    "sentiment": "Negative",
+    "topic": "Leaked NDA",
+    "quote": "An ex-employee accused Carol of mishandling confidential information."
+  },
+  {
+    "employee": "Frank Black",
+    "sentiment": "Negative",
+    "topic": "Compliance Violation",
+    "quote": "A report claims Frank was aware of reporting delays."
+  },
+  {
+    "employee": "Ella White",
+    "sentiment": "Positive",
+    "topic": "Infrastructure Upgrade",
+    "quote": "Ella led a successful migration to cloud with zero downtime."
+  }
+]

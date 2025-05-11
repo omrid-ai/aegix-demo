@@ -1,0 +1,20 @@
+{
+  "labels": ["12:00", "12:10", "12:20", "12:30", "12:40", "12:50", "13:00"],
+  "datasets": [
+    {
+      "label": "Finance Alerts",
+      "data": [1, 2, 3, 2, 4, 6, 7],
+      "borderColor": "cyan"
+    },
+    {
+      "label": "Narrative Activity",
+      "data": [0, 1, 0, 2, 3, 5, 6],
+      "borderColor": "magenta"
+    },
+    {
+      "label": "Crisis Mentions",
+      "data": [1, 1, 1, 2, 2, 3, 4],
+      "borderColor": "orange"
+    }
+  ]
+}

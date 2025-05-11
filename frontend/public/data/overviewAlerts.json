@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "sector": "Finance",
+    "title": "Suspicious Transaction Spike",
+    "priority": "High",
+    "time": "2025-05-04 11:15"
+  },
+  {
+    "id": 2,
+    "sector": "Narrative",
+    "title": "Viral Disinfo about EU Regulation",
+    "priority": "Medium",
+    "time": "2025-05-04 10:42"
+  },
+  {
+    "id": 3,
+    "sector": "Threat Actors",
+    "title": "Actor 'CryptoZero' Active in Forums",
+    "priority": "High",
+    "time": "2025-05-04 09:58"
+  },
+  {
+    "id": 4,
+    "sector": "Campaigns",
+    "title": "Coordinated Hashtag Attack Detected",
+    "priority": "Medium",
+    "time": "2025-05-04 08:30"
+  },
+  {
+    "id": 5,
+    "sector": "Regulation",
+    "title": "New Rule Proposal on Crypto KYC",
+    "priority": "Low",
+    "time": "2025-05-03 17:10"
+  }
+]

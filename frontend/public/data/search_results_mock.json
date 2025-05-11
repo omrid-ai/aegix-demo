@@ -36,10 +36,11 @@
   },
   {
     "title": "Insider Leaks: Merger Between Two Fintech Firms",
-    "snippet": "",
+    "snippet": "Confidential merger discussions leaked.",
     "source": "Deep Forum Intelligence",
     "date": "2025-04-28",
-    "id": "Node6"
+    "id": "Node6",
+    "is_mna": true
   },
   {
     "title": "Election Interference Plot on Telegram",
@@ -47,5 +48,13 @@
     "source": "Telegram Monitor",
     "date": "2025-04-27",
     "id": "Node7"
+  },
+  {
+    "title": "Due Diligence Report: AI Startup Acquisition",
+    "snippet": "Initial findings show moderate risk with legal exposure.",
+    "source": "Internal Intelligence",
+    "date": "2025-04-30",
+    "id": "Node8",
+    "is_mna": true
   }
 ]

@@ -1,0 +1,50 @@
+[
+  {
+    "date": "Apr 25, 2025",
+    "platform": "Telegram",
+    "description": "Disinformation about elections",
+    "priority": "High",
+    "status": "Pending"
+  },
+  {
+    "date": "Apr 26, 2025",
+    "platform": "Facebook",
+    "description": "Corporate defamation",
+    "priority": "Medium",
+    "status": "In Progress"
+  },
+  {
+    "date": "Apr 27, 2025",
+    "platform": "Google Search",
+    "description": "Unwanted search results",
+    "priority": "Low",
+    "status": "Removed"
+  },
+  {
+    "date": "May 03, 2025",
+    "platform": "facebook",
+    "description": "fake",
+    "priority": "High",
+    "status": "Pending"
+  },
+  {
+    "date": "May 03, 2025",
+    "platform": "Facebook",
+    "description": "fake news",
+    "priority": "High",
+    "status": "Pending",
+    "link": "fake",
+    "severity": "Severe",
+    "file": "ChatGPT_Image_May_3_2025_12_20_33_PM.png"
+  },
+  {
+    "date": "May 03, 2025",
+    "platform": "Facebook",
+    "description": "fake news",
+    "priority": "High",
+    "status": "Pending",
+    "link": "fake",
+    "severity": "Severe",
+    "file": "ChatGPT_Image_May_3_2025_12_20_33_PM.png"
+  }
+]

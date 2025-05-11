@@ -1,0 +1,72 @@
+{
+  "name": "SafeCom Solutions",
+  "risk_matrix": [
+    {
+      "area": "Regulatory",
+      "level": "High",
+      "note": "Pending EU compliance audit"
+    },
+    {
+      "area": "Leadership",
+      "level": "Medium",
+      "note": "Recent executive turnover"
+    },
+    {
+      "area": "Technical",
+      "level": "Low",
+      "note": "Strong encryption validated"
+    }
+  ],
+  "narratives": [
+    {
+      "text": "SafeCom lauded for quick breach response",
+      "sentiment": "positive",
+      "source": "NewsAPI"
+    },
+    {
+      "text": "Concern over SafeCom's data handling policies",
+      "sentiment": "neutral",
+      "source": "LinkedIn"
+    }
+  ],
+  "employees": [
+    {
+      "name": "Dana Gold \u2013 VP Security",
+      "platforms": "LinkedIn",
+      "flags": "suspicious GitHub activity"
+    }
+  ],
+  "leaks": [
+    {
+      "filename": "safecom_incident.zip",
+      "risk": "medium",
+      "source": "darkweb by LeakHunter"
+    }
+  ],
+  "campaigns": [
+    {
+      "title": "Criticism over SafeCom lobbying",
+      "launched": "2025-02-20",
+      "channels": "Reddit + YouTube"
+    }
+  ],
+  "market_sentiment": {
+    "Germany": 0.5,
+    "Israel": -0.2,
+    "UK": 0.1
+  },
+  "ai_recommendations": [
+    {
+      "text": "Investigate flagged repositories",
+      "priority": "Medium"
+    },
+    {
+      "text": "Monitor social sentiment around compliance",
+      "priority": "High"
+    },
+    {
+      "text": "Review onboarding protocols",
+      "priority": "Low"
+    }
+  ]
+}

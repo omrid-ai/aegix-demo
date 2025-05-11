@@ -1,51 +1,44 @@
-import React, { useState } from "react";
-import { Line } from "react-chartjs-2";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import ActorNetworkGraph from "./ActorNetworkGraph";
+import ActorRiskMatrix from "./ActorRiskMatrix";
+import ActorIdentityMatches from "./ActorIdentityMatches";
 
 const ActorCorrelationDashboard = () => {
-  const navigate = useNavigate();
+  const [correlationData, setCorrelationData] = useState(null);
 
-  const data = {
-    labels: ["Telegram", "X", "Forums", "IRC", "Pastebin"],
-    datasets: [
-      {
-        label: "Correlated Actors",
-        data: [12, 19, 7, 5, 9],
-        fill: false,
-        backgroundColor: "#22d3ee",
-        borderColor: "#06b6d4",
-      },
-    ],
-  };
+  useEffect(() => {
+    fetch("/data/actors/correlation.json")
+      .then((res) => res.json())
+      .then(setCorrelationData);
+  }, []);
 
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-    },
-    scales: {
-      y: { beginAtZero: true, ticks: { color: "white" }, grid: { color: "gray" } },
-      x: { ticks: { color: "white" }, grid: { color: "gray" } },
-    },
-  };
+  if (!correlationData) return <div className="text-white p-6">Loading actor correlation data...</div>;
 
   return (
-    <div className="min-h-screen bg-black text-white flex justify-center p-8">
-      <div className="w-full max-w-6xl space-y-10">
-        <button
-          onClick={() => navigate("/dashboard")}
-          className="mb-4 bg-gray-800 hover:bg-cyan-700 text-white py-2 px-4 rounded transition"
-        >
-          ← Back to Dashboard
-        </button>
-        <h1 className="text-3xl font-bold mb-4">🛰 Cross-Platform Actor Correlation</h1>
-        <p className="text-gray-400 mb-6">
-          Detect users and personas that appear across multiple platforms with high correlation scores.
-        </p>
-        <div className="bg-gray-900 p-6 rounded-xl shadow-lg">
-          <Line data={data} options={options} />
-        </div>
-      </div>
+    <div className="min-h-screen bg-black text-white p-6 space-y-6">
+      <h1 className="text-3xl font-bold">🧩 Actor Correlation Dashboard</h1>
+
+      <Card>
+        <CardContent>
+          <h2 className="text-xl font-semibold mb-2">🌐 Network of Connected Actors</h2>
+          <ActorNetworkGraph nodes={correlationData.nodes} links={correlationData.links} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent>
+          <h2 className="text-xl font-semibold mb-2">📊 Risk Matrix by Cluster</h2>
+          <ActorRiskMatrix risks={correlationData.risk_matrix} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent>
+          <h2 className="text-xl font-semibold mb-2">🆔 Identity Overlaps</h2>
+          <ActorIdentityMatches matches={correlationData.identity_matches} />
+        </CardContent>
+      </Card>
     </div>
   );
 };

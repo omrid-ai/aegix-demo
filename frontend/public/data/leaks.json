@@ -1,0 +1,9 @@
+[
+  {
+    "id": "leak_021",
+    "file_name": "medicrypt_users.zip",
+    "risk_level": "high",
+    "discovered_on": "darkweb",
+    "detected_by": "DataLeakHunter"
+  }
+]

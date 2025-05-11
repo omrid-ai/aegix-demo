@@ -1,0 +1,23 @@
+[
+  {
+    "date": "Apr 25, 2025",
+    "platform": "Telegram",
+    "description": "Disinformation about elections",
+    "priority": "High",
+    "status": "Pending"
+  },
+  {
+    "date": "Apr 26, 2025",
+    "platform": "Facebook",
+    "description": "Corporate defamation",
+    "priority": "Medium",
+    "status": "In Progress"
+  },
+  {
+    "date": "Apr 27, 2025",
+    "platform": "Google Search",
+    "description": "Unwanted search results",
+    "priority": "Low",
+    "status": "Removed"
+  }
+]

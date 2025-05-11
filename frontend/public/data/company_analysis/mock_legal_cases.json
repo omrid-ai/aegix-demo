@@ -1,0 +1,47 @@
+[
+  {
+    "type": "Patent Dispute",
+    "description": "Legal conflict regarding technology licensing.",
+    "status": "פתוחה",
+    "date": "2024-09-01",
+    "exposure": "High",
+    "url": "https://legal.example.com/patent-case-123",
+    "notes": "Pending decision from court."
+  },
+  {
+    "type": "Employee Claim",
+    "description": "Complaint from former employee over severance.",
+    "status": "סגורה",
+    "date": "2023-06-14",
+    "exposure": "Medium",
+    "url": "https://legal.example.com/employee-case-88",
+    "notes": "Settled out of court."
+  },
+  {
+    "type": "Compliance Warning",
+    "description": "Notification regarding data privacy breach.",
+    "status": "פתוחה",
+    "date": "2024-11-10",
+    "exposure": "Low",
+    "url": "https://legal.example.com/compliance-notice",
+    "notes": "Audit scheduled for review."
+  },
+  {
+    "type": "Trademark Violation",
+    "description": "Alleged use of protected brand elements.",
+    "status": "סגורה",
+    "date": "2022-12-05",
+    "exposure": "Medium",
+    "url": "https://legal.example.com/trademark-violation",
+    "notes": "Case dismissed."
+  },
+  {
+    "type": "Regulatory Investigation",
+    "description": "Inquiry into sales practices in EMEA region.",
+    "status": "פתוחה",
+    "date": "2025-01-20",
+    "exposure": "High",
+    "url": "https://legal.example.com/regulatory-review",
+    "notes": "Awaiting preliminary report."
+  }
+]

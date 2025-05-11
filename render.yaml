@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: aegix-api
+    env: python
+    buildCommand: ""
+    startCommand: python aegix_project/api_server.py
+    runtime: python
+    region: oregon
+    plan: free

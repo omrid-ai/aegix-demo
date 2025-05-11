@@ -79,7 +79,7 @@ const FinanceDashboard = () => {
         </div>
       </div>
 
-      <canvas id="anomalyChart" className="bg-white rounded-lg h-64 mb-8"></canvas>
+      <canvas style={{ maxHeight: "200px", maxWidth: "100%" }} id="anomalyChart" className="bg-white rounded-lg h-64 mb-8"></canvas>
 
       <div>
         <h2 className="text-xl font-bold text-white mb-2">Suspicious Entities</h2>

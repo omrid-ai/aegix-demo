@@ -1,0 +1,74 @@
+{
+  "locations": [
+    {
+      "lat": 15.5007,
+      "lng": 32.5599,
+      "label": "Sudan Civil War",
+      "type": "conflict",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 31.7683,
+      "lng": 35.2137,
+      "label": "Gaza Humanitarian Crisis",
+      "type": "conflict",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 35.8617,
+      "lng": 104.1954,
+      "label": "Xinjiang Human Rights Abuses",
+      "type": "conflict",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 23.6345,
+      "lng": -102.5528,
+      "label": "Mexico Drug War",
+      "type": "conflict",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 20.5937,
+      "lng": 78.9629,
+      "label": "India-Pakistan Heatwave",
+      "type": "climate",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 37.9838,
+      "lng": 23.7275,
+      "label": "Athens Wildfires",
+      "type": "climate",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": -1.2921,
+      "lng": 36.8219,
+      "label": "Kenya Drought",
+      "type": "climate",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 40.7128,
+      "lng": -74.0060,
+      "label": "New York Flooding",
+      "type": "climate",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "label": "UK Economic Crisis",
+      "type": "financial",
+      "date": "2025-05-01"
+    },
+    {
+      "lat": 35.6895,
+      "lng": 139.6917,
+      "label": "Tokyo Earthquake Recovery",
+      "type": "climate",
+      "date": "2025-05-01"
+    }
+  ]
+}

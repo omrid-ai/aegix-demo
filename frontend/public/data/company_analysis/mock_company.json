@@ -1,0 +1,112 @@
+{
+  "company_name": "NanoBit AI",
+  "industry": "AI למכשור רפואי נייד",
+  "description": "סטארטאפ המפתח צמיד ואפליקציה לזיהוי מוקדם של מחלות נוירולוגיות באמצעות AI.",
+  "overall_risk_score": 7.3,
+  "employees": [
+    {
+      "id": "alice-brown",
+      "name": "Alice Brown",
+      "role": "CTO",
+      "department": "Technology",
+      "location": "San Francisco, USA",
+      "risk": "Medium",
+      "risk_reason": "Previously led a failed AI integration with high budget loss.",
+      "image": "/data/employees/alice_brown.jpg",
+      "family_tree": [
+        { "name": "Daniel Brown", "relation": "Spouse" },
+        { "name": "Ella Brown", "relation": "Daughter" }
+      ]
+    },
+    {
+      "id": "frank-black",
+      "name": "Frank Black",
+      "role": "Compliance Officer",
+      "department": "Legal",
+      "location": "Tel Aviv, Israel",
+      "risk": "High",
+      "risk_reason": "Mentioned in whistleblower complaint and linked to missed compliance reports.",
+      "image": "/data/employees/frank_black.jpg",
+      "family_tree": [
+        { "name": "Sarah Black", "relation": "Spouse" },
+        { "name": "Tom Black", "relation": "Son" }
+      ]
+    },
+    {
+      "id": "carol-jones",
+      "name": "Carol Jones",
+      "role": "Product Manager",
+      "department": "Product",
+      "location": "New York, USA",
+      "risk": "Medium",
+      "risk_reason": "Involved in delayed product launches and negative feedback.",
+      "image": "/data/employees/carol_jones.jpg",
+      "family_tree": [
+        { "name": "Liam Jones", "relation": "Son" }
+      ]
+    },
+    {
+      "id": "bob-smith",
+      "name": "Bob Smith",
+      "role": "CEO",
+      "department": "Management",
+      "location": "London, UK",
+      "risk": "Low",
+      "risk_reason": "No flagged events. Considered low operational risk.",
+      "image": "/data/employees/bob_smith.jpg",
+      "family_tree": [
+        { "name": "Linda Smith", "relation": "Spouse" },
+        { "name": "Sophie Smith", "relation": "Daughter" },
+        { "name": "Jake Smith", "relation": "Son" }
+      ]
+    },
+    {
+      "id": "daniel-green",
+      "name": "Daniel Green",
+      "role": "AI Researcher",
+      "department": "R&D",
+      "location": "Berlin, Germany",
+      "risk": "Medium",
+      "risk_reason": "Disclosed experimental models without internal review.",
+      "image": "/data/employees/daniel_green.jpg",
+      "family_tree": []
+    },
+    {
+      "id": "ella-white",
+      "name": "Ella White",
+      "role": "Data Engineer",
+      "department": "Infrastructure",
+      "location": "Paris, France",
+      "risk": "Low",
+      "risk_reason": "No risk indicators. Well-reviewed internally.",
+      "image": "/data/employees/ella_white.jpg",
+      "family_tree": [
+        { "name": "Maya White", "relation": "Sister" }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "name": "NeuroBand",
+      "type": "Wearable",
+      "issues": ["Sensor latency", "Battery overheating"]
+    },
+    {
+      "name": "NeuroSync App",
+      "type": "Mobile",
+      "issues": ["Crash on Android", "Data sync delay"]
+    }
+  ],
+  "legal_issues": [
+    {
+      "type": "Patent Dispute",
+      "status": "Open",
+      "description": "Dispute over AI motion tracking patent filed by competitor NeuroLink Ltd."
+    },
+    {
+      "type": "Compliance Audit",
+      "status": "Closed",
+      "description": "Audit triggered by delayed GDPR data response."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "platform": "Telegram",
+    "comment": "The product is improving every week.",
+    "sentiment": "Positive"
+  },
+  {
+    "platform": "Twitter",
+    "comment": "UI is confusing and slow at times.",
+    "sentiment": "Negative"
+  },
+  {
+    "platform": "News",
+    "comment": "Experts say the product has potential.",
+    "sentiment": "Neutral"
+  },
+  {
+    "platform": "Reddit",
+    "comment": "The product saved us hours of work. Impressive!",
+    "sentiment": "Positive"
+  },
+  {
+    "platform": "Telegram",
+    "comment": "Still missing key integrations.",
+    "sentiment": "Negative"
+  },
+  {
+    "platform": "Twitter",
+    "comment": "I don't get why people are hyping this.",
+    "sentiment": "Neutral"
+  },
+  {
+    "platform": "News",
+    "comment": "Adoption rate is increasing in the finance sector.",
+    "sentiment": "Positive"
+  },
+  {
+    "platform": "Reddit",
+    "comment": "Company doesn't seem responsive to feedback.",
+    "sentiment": "Negative"
+  }
+]

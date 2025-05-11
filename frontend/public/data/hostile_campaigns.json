@@ -1,0 +1,22 @@
+{
+  "campaigns": [
+    {
+      "name": "Operation EchoStorm",
+      "target": "EU Elections 2025",
+      "channel": "Telegram + Deep Web",
+      "description": "Coordinated disinformation campaign leveraging AI-generated content to influence public sentiment. Focused on immigration and economic instability."
+    },
+    {
+      "name": "BlackMirror Initiative",
+      "target": "Healthcare Sector (US)",
+      "channel": "Twitter / X + Facebook",
+      "description": "Campaign aiming to undermine vaccine confidence through emotional narratives and fake expert profiles. Signals indicate paid promotion behind spread."
+    },
+    {
+      "name": "SilentCascade",
+      "target": "Regulatory Bodies in East Asia",
+      "channel": "Dark Web Forums + Niche Blogs",
+      "description": "Actors attempting to create false perception of internal corruption in governmental departments through anonymous leaks and report mimicry."
+    }
+  ]
+}

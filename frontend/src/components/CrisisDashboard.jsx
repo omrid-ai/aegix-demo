@@ -55,10 +55,13 @@ const CrisisDashboard = () => {
     };
   }, []);
 
-  if (!data) return <MainLayout><p className="text-white p-6">Loading...</p></MainLayout>;
+  if (!data) return <MainLayout>
+<div className="p-8 bg-black text-white min-h-screen max-w-6xl mx-auto"><p className="text-white p-6">Loading...</p></div>
+</MainLayout>;
 
   return (
     <MainLayout>
+<div className="p-8 bg-black text-white min-h-screen max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">🚨 Crisis Dashboard</h1>
 
       <div className="grid grid-cols-3 gap-4 mb-6">
@@ -76,10 +79,10 @@ const CrisisDashboard = () => {
         </div>
       </div>
 
-      <canvas id="crisisTrendChart" className="bg-white rounded-lg h-64 mb-8"></canvas>
+      <canvas style={{ maxHeight: "400px", maxWidth: "100%" }} id="crisisTrendChart" className="bg-white rounded-lg h-80 mb-6 max-w-4xl mx-auto"></canvas>
 
       <h2 className="text-xl font-bold text-white mb-2">Live Alerts</h2>
-      <table className="table-auto w-full text-left text-white">
+      <table className="table-auto text-sm text-left text-white max-w-4xl mx-auto">
         <thead>
           <tr>
             <th className="border-b p-2">Type</th>
@@ -99,7 +102,8 @@ const CrisisDashboard = () => {
           ))}
         </tbody>
       </table>
-    </MainLayout>
+    </div>
+</MainLayout>
   );
 };
 

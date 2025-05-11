@@ -1,0 +1,182 @@
+{
+  "employees": [
+    {
+      "id": "alice-brown",
+      "name": "Alice Brown",
+      "role": "CTO",
+      "risk": "Medium",
+      "department": "Technology",
+      "location": "San Francisco, USA",
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "house_photo_url": "https://source.unsplash.com/400x300/?house,san-francisco",
+      "photo_url": "https://randomuser.me/api/portraits/women/44.jpg",
+      "risk_reason": "Previously led a failed AI integration with high budget loss.",
+      "family": [
+        {
+          "name": "John Brown",
+          "relation": "Spouse",
+          "age": 42
+        },
+        {
+          "name": "Ella Brown",
+          "relation": "Daughter",
+          "age": 12
+        }
+      ],
+      "social_links": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://linkedin.com/in/alicebrown"
+        },
+        {
+          "platform": "Telegram",
+          "url": "https://t.me/alicebrown"
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/alicebrown"
+        }
+      ]
+    },
+    {
+      "id": "frank-black",
+      "name": "Frank Black",
+      "role": "Compliance Officer",
+      "risk": "High",
+      "department": "Legal",
+      "location": "Tel Aviv, Israel",
+      "lat": 32.0853,
+      "lng": 34.7818,
+      "house_photo_url": "https://source.unsplash.com/400x300/?house,tel-aviv",
+      "photo_url": "https://randomuser.me/api/portraits/men/55.jpg",
+      "risk_reason": "Mentioned in whistleblower complaint and linked to missed compliance reports.",
+      "family": [
+        {
+          "name": "Dana Black",
+          "relation": "Spouse",
+          "age": 41
+        },
+        {
+          "name": "Leo Black",
+          "relation": "Son",
+          "age": 14
+        }
+      ],
+      "social_links": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://linkedin.com/in/frankblack"
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/frank.black"
+        },
+        {
+          "platform": "Telegram",
+          "url": "https://t.me/frankblack"
+        }
+      ]
+    },
+    {
+      "id": "carol-jones",
+      "name": "Carol Jones",
+      "role": "Product Manager",
+      "risk": "High",
+      "department": "Product",
+      "location": "New York, USA",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "house_photo_url": "https://source.unsplash.com/400x300/?house,new-york",
+      "photo_url": "https://randomuser.me/api/portraits/women/68.jpg",
+      "risk_reason": "Was involved in a leaked NDA incident and flagged in external news sources.",
+      "family": [],
+      "social_links": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://linkedin.com/in/caroljones"
+        },
+        {
+          "platform": "Telegram",
+          "url": "https://t.me/caroljones"
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/caroljones"
+        }
+      ]
+    },
+    {
+      "id": "bob-smith",
+      "name": "Bob Smith",
+      "role": "CEO",
+      "risk": "Low",
+      "department": "Management",
+      "location": "London, UK",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "house_photo_url": "https://source.unsplash.com/400x300/?house,london",
+      "photo_url": "https://randomuser.me/api/portraits/men/45.jpg",
+      "risk_reason": "No flagged events. Considered low operational risk.",
+      "family": [],
+      "social_links": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://linkedin.com/in/bobsmith"
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/bob.smith"
+        }
+      ]
+    },
+    {
+      "id": "daniel-green",
+      "name": "Daniel Green",
+      "role": "AI Researcher",
+      "risk": "Medium",
+      "department": "R&D",
+      "location": "Berlin, Germany",
+      "lat": 52.52,
+      "lng": 13.405,
+      "house_photo_url": "https://source.unsplash.com/400x300/?house,berlin",
+      "photo_url": "https://randomuser.me/api/portraits/men/32.jpg",
+      "risk_reason": "Disclosed experimental models without internal review.",
+      "family": [],
+      "social_links": [
+        {
+          "platform": "X",
+          "url": "https://x.com/danielgreen"
+        },
+        {
+          "platform": "Telegram",
+          "url": "https://t.me/danielgreen"
+        }
+      ]
+    },
+    {
+      "id": "ella-white",
+      "name": "Ella White",
+      "role": "Data Engineer",
+      "risk": "Low",
+      "department": "Data Infrastructure",
+      "location": "Paris, France",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "house_photo_url": "https://source.unsplash.com/400x300/?house,paris",
+      "photo_url": "https://randomuser.me/api/portraits/women/28.jpg",
+      "risk_reason": "No risk indicators. Well-reviewed internally.",
+      "family": [],
+      "social_links": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://linkedin.com/in/ellawhite"
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/ella.white"
+        }
+      ]
+    }
+  ]
+}

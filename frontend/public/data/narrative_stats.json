@@ -1,0 +1,9 @@
+{
+  "narratives": [
+    { "type": "Anti-Regulation Narratives", "mentions": 45 },
+    { "type": "Election Fraud Claims", "mentions": 32 },
+    { "type": "Crypto Collapse Rumors", "mentions": 28 },
+    { "type": "Biometric Surveillance Fear", "mentions": 21 },
+    { "type": "Central Bank Conspiracies", "mentions": 18 }
+  ]
+}

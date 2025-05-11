@@ -1,0 +1,7 @@
+[
+  { "wallet_id": "wallet_1", "date": "2025-05-01", "volume": 2.1 },
+  { "wallet_id": "wallet_1", "date": "2025-05-02", "volume": 3.4 },
+  { "wallet_id": "wallet_1", "date": "2025-05-03", "volume": 5.2 },
+  { "wallet_id": "wallet_1", "date": "2025-05-04", "volume": 1.3 },
+  { "wallet_id": "wallet_1", "date": "2025-05-05", "volume": 4.7 }
+]

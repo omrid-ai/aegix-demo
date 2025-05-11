@@ -1,0 +1,104 @@
+2025-05-11 14:35:44,858 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 14:35:44,858 - [33mPress CTRL+C to quit[0m
+2025-05-11 14:35:44,859 -  * Restarting with stat
+2025-05-11 14:35:46,289 -  * Debugger is active!
+2025-05-11 14:35:46,290 -  * Debugger PIN: 617-682-219
+2025-05-11 14:36:15,141 - 127.0.0.1 - - [11/May/2025 14:36:15] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:36:38,063 - 127.0.0.1 - - [11/May/2025 14:36:38] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:37:11,725 - 127.0.0.1 - - [11/May/2025 14:37:11] "[33mGET /api/coinmarketcap/top HTTP/1.1[0m" 404 -
+2025-05-11 14:37:11,749 - 127.0.0.1 - - [11/May/2025 14:37:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-11 14:37:16,401 - 127.0.0.1 - - [11/May/2025 14:37:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-11 14:39:50,383 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\fetchers\\coinmarketcap_fetcher.py', reloading
+2025-05-11 14:39:50,575 -  * Restarting with stat
+2025-05-11 14:39:52,111 -  * Debugger is active!
+2025-05-11 14:39:52,112 -  * Debugger PIN: 617-682-219
+2025-05-11 14:41:23,244 - 127.0.0.1 - - [11/May/2025 14:41:23] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 14:41:23,257 - 127.0.0.1 - - [11/May/2025 14:41:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-11 14:42:38,791 - 127.0.0.1 - - [11/May/2025 14:42:38] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:42:57,934 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 14:42:57,934 - [33mPress CTRL+C to quit[0m
+2025-05-11 14:42:57,935 -  * Restarting with stat
+2025-05-11 14:42:59,417 -  * Debugger is active!
+2025-05-11 14:42:59,418 -  * Debugger PIN: 617-682-219
+2025-05-11 14:43:01,461 - 127.0.0.1 - - [11/May/2025 14:43:01] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 14:43:01,470 - 127.0.0.1 - - [11/May/2025 14:43:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-11 14:44:48,717 - 127.0.0.1 - - [11/May/2025 14:44:48] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:47:20,380 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\api_server.py', reloading
+2025-05-11 14:47:20,569 -  * Restarting with stat
+2025-05-11 14:47:22,076 -  * Debugger is active!
+2025-05-11 14:47:22,077 -  * Debugger PIN: 617-682-219
+2025-05-11 14:47:37,221 - 127.0.0.1 - - [11/May/2025 14:47:37] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 14:47:50,369 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 14:47:50,369 - [33mPress CTRL+C to quit[0m
+2025-05-11 14:47:50,370 -  * Restarting with stat
+2025-05-11 14:47:51,816 -  * Debugger is active!
+2025-05-11 14:47:51,817 -  * Debugger PIN: 617-682-219
+2025-05-11 14:48:03,995 - 127.0.0.1 - - [11/May/2025 14:48:03] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 14:49:37,284 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\api_server.py', reloading
+2025-05-11 14:49:37,468 -  * Restarting with stat
+2025-05-11 14:49:38,927 -  * Debugger is active!
+2025-05-11 14:49:38,928 -  * Debugger PIN: 617-682-219
+2025-05-11 14:50:02,330 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\api_server.py', reloading
+2025-05-11 14:50:02,513 -  * Restarting with stat
+2025-05-11 14:50:03,981 -  * Debugger is active!
+2025-05-11 14:50:03,982 -  * Debugger PIN: 617-682-219
+2025-05-11 14:52:24,814 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 14:52:24,814 - [33mPress CTRL+C to quit[0m
+2025-05-11 14:52:24,815 -  * Restarting with stat
+2025-05-11 14:52:26,259 -  * Debugger is active!
+2025-05-11 14:52:26,260 -  * Debugger PIN: 617-682-219
+2025-05-11 14:52:33,216 - 127.0.0.1 - - [11/May/2025 14:52:33] "[33mGET /api/coinmarketcap/top HTTP/1.1[0m" 404 -
+2025-05-11 14:52:33,237 - 127.0.0.1 - - [11/May/2025 14:52:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-11 14:52:41,661 - 127.0.0.1 - - [11/May/2025 14:52:41] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:52:44,433 - 127.0.0.1 - - [11/May/2025 14:52:44] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 14:54:27,309 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 14:54:27,309 - [33mPress CTRL+C to quit[0m
+2025-05-11 14:54:27,310 -  * Restarting with stat
+2025-05-11 14:54:28,700 -  * Debugger is active!
+2025-05-11 14:54:28,701 -  * Debugger PIN: 617-682-219
+2025-05-11 14:56:18,209 - 127.0.0.1 - - [11/May/2025 14:56:18] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:56:18,458 - 127.0.0.1 - - [11/May/2025 14:56:18] "[33mGET /api/coinmarketcap HTTP/1.1[0m" 404 -
+2025-05-11 14:56:19,647 - 127.0.0.1 - - [11/May/2025 14:56:19] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 14:57:08,941 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 14:57:08,941 - [33mPress CTRL+C to quit[0m
+2025-05-11 14:57:08,941 -  * Restarting with stat
+2025-05-11 14:57:10,322 -  * Debugger is active!
+2025-05-11 14:57:10,323 -  * Debugger PIN: 617-682-219
+2025-05-11 14:57:18,073 - 127.0.0.1 - - [11/May/2025 14:57:18] "[33mGET /api/coinmarketcap/top HTTP/1.1[0m" 404 -
+2025-05-11 14:57:18,084 - 127.0.0.1 - - [11/May/2025 14:57:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-11 14:57:22,096 - 127.0.0.1 - - [11/May/2025 14:57:22] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 15:00:44,992 - 127.0.0.1 - - [11/May/2025 15:00:44] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 15:01:48,404 - 127.0.0.1 - - [11/May/2025 15:01:48] "GET /api/coinmarket/top HTTP/1.1" 200 -
+2025-05-11 17:31:07,136 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\collectors\\fatf_scraper.py', reloading
+2025-05-11 17:31:07,330 -  * Restarting with stat
+2025-05-11 17:31:08,912 -  * Debugger is active!
+2025-05-11 17:31:08,913 -  * Debugger PIN: 617-682-219
+2025-05-11 20:07:32,786 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.12:5000
+2025-05-11 20:07:32,786 - [33mPress CTRL+C to quit[0m
+2025-05-11 20:07:32,786 -  * Restarting with stat
+2025-05-11 20:07:34,173 -  * Debugger is active!
+2025-05-11 20:07:34,174 -  * Debugger PIN: 617-682-219
+2025-05-11 20:15:54,264 - 127.0.0.1 - - [11/May/2025 20:15:54] "POST /api/ai/insights HTTP/1.1" 200 -
+2025-05-11 20:15:54,273 - 127.0.0.1 - - [11/May/2025 20:15:54] "POST /api/ai/insights HTTP/1.1" 200 -
+2025-05-11 20:15:58,635 - 127.0.0.1 - - [11/May/2025 20:15:58] "POST /api/ai/insights HTTP/1.1" 200 -

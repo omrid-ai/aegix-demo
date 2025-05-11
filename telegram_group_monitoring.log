@@ -34,3 +34,43 @@
 2025-04-21 20:25:51,438 -  * Restarting with stat
 2025-04-21 20:25:53,435 -  * Debugger is active!
 2025-04-21 20:25:53,436 -  * Debugger PIN: 617-682-219
+2025-05-05 20:01:44,461 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 20:01:44,462 - [33mPress CTRL+C to quit[0m
+2025-05-05 20:01:44,462 -  * Restarting with stat
+2025-05-05 20:01:46,444 -  * Debugger is active!
+2025-05-05 20:01:46,445 -  * Debugger PIN: 670-508-653
+2025-05-06 10:32:29,163 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\collectors\\news_fetcher.py', reloading
+2025-05-06 10:32:29,422 -  * Restarting with stat
+2025-05-06 10:32:32,304 -  * Debugger is active!
+2025-05-06 10:32:32,306 -  * Debugger PIN: 670-508-653
+2025-05-06 10:35:00,478 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\api_server.py', reloading
+2025-05-06 10:35:00,716 -  * Restarting with stat
+2025-05-06 10:35:02,785 -  * Debugger is active!
+2025-05-06 10:35:02,786 -  * Debugger PIN: 670-508-653
+2025-05-06 10:35:13,584 - 127.0.0.1 - - [06/May/2025 10:35:13] "[33mGET /api/news?q=cyber HTTP/1.1[0m" 404 -
+2025-05-06 10:35:27,216 - 127.0.0.1 - - [06/May/2025 10:35:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-06 10:40:04,443 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\collectors\\news_fetcher.py', reloading
+2025-05-06 10:40:04,688 -  * Restarting with stat
+2025-05-06 10:40:06,763 -  * Debugger is active!
+2025-05-06 10:40:06,764 -  * Debugger PIN: 670-508-653
+2025-05-06 10:40:08,655 - 127.0.0.1 - - [06/May/2025 10:40:08] "[33mGET /api/news?q=cyber HTTP/1.1[0m" 404 -
+2025-05-06 10:40:08,670 - 127.0.0.1 - - [06/May/2025 10:40:08] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-06 10:40:10,202 - 127.0.0.1 - - [06/May/2025 10:40:10] "[33mGET /api/news?q=cyber HTTP/1.1[0m" 404 -
+2025-05-06 10:40:10,520 - 127.0.0.1 - - [06/May/2025 10:40:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-06 10:40:10,954 - 127.0.0.1 - - [06/May/2025 10:40:10] "[33mGET /api/news?q=cyber HTTP/1.1[0m" 404 -
+2025-05-06 10:40:10,960 - 127.0.0.1 - - [06/May/2025 10:40:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-06 10:42:06,902 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\collectors\\news_fetcher.py', reloading
+2025-05-06 10:42:07,145 -  * Restarting with stat
+2025-05-06 10:42:09,306 -  * Debugger is active!
+2025-05-06 10:42:09,307 -  * Debugger PIN: 670-508-653
+2025-05-06 10:42:10,560 - 127.0.0.1 - - [06/May/2025 10:42:10] "[33mGET /api/news?q=cyber HTTP/1.1[0m" 404 -
+2025-05-06 10:42:10,570 - 127.0.0.1 - - [06/May/2025 10:42:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-06 10:42:11,473 - 127.0.0.1 - - [06/May/2025 10:42:11] "[33mGET /api/news?q=cyber HTTP/1.1[0m" 404 -
+2025-05-06 10:42:11,786 - 127.0.0.1 - - [06/May/2025 10:42:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-09 17:06:37,930 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 17:06:37,931 - [33mPress CTRL+C to quit[0m
+2025-05-09 17:06:37,931 -  * Restarting with stat
+2025-05-09 17:06:39,911 -  * Debugger is active!
+2025-05-09 17:06:39,912 -  * Debugger PIN: 670-508-653

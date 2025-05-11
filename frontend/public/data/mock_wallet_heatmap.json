@@ -1,0 +1,7 @@
+[
+  { "wallet_id": "w1", "lat": 32.0853, "lon": 34.7818, "risk_score": 7 },
+  { "wallet_id": "w2", "lat": 31.7683, "lon": 35.2137, "risk_score": 3 },
+  { "wallet_id": "w3", "lat": 29.5581, "lon": 34.9482, "risk_score": 9 },
+  { "wallet_id": "w4", "lat": 32.7940, "lon": 34.9896, "risk_score": 2 },
+  { "wallet_id": "w5", "lat": 33.2232, "lon": 35.6550, "risk_score": 8 }
+]

@@ -1,0 +1,90 @@
+{
+  "name": "Kela Cyber Intelligence",
+  "risk_matrix": [
+    {
+      "area": "Technology",
+      "level": "Medium",
+      "notes": "Development of classified cyber threat detection system"
+    },
+    {
+      "area": "Market",
+      "level": "High",
+      "notes": "Growing demand due to geopolitical tensions"
+    },
+    {
+      "area": "Competition",
+      "level": "Medium",
+      "notes": "Entry of new players into the cyber intelligence market"
+    }
+  ],
+  "narratives": [
+    {
+      "text": "Kela leads the cyber intelligence field with innovative solutions.",
+      "sentiment": "positive",
+      "source": "Globes"
+    },
+    {
+      "text": "Kela's secret system draws interest in the defense market.",
+      "sentiment": "neutral",
+      "source": "Calcalist"
+    },
+    {
+      "text": "Concerns over geopolitical instability affecting Kela's operations.",
+      "sentiment": "negative",
+      "source": "Twitter"
+    }
+  ],
+  "employees": [
+    {
+      "name": "Hamutal Meridor",
+      "position": "CEO",
+      "platforms": [
+        "LinkedIn",
+        "Twitter"
+      ],
+      "flags": [
+        "innovative leadership",
+        "defense-tech expert"
+      ]
+    }
+  ],
+  "leaks": [],
+  "campaigns": [
+    {
+      "name": "Disinformation campaign on social media",
+      "date": "2025-04-28",
+      "channels": [
+        "Twitter",
+        "Telegram"
+      ]
+    }
+  ],
+  "market_sentiment": [
+    {
+      "region": "Israel",
+      "score": 0.6
+    },
+    {
+      "region": "USA",
+      "score": 0.4
+    },
+    {
+      "region": "Europe",
+      "score": 0.2
+    }
+  ],
+  "ai_recommendations": [
+    {
+      "action": "Monitor geopolitical effects on market stability",
+      "priority": "High"
+    },
+    {
+      "action": "Invest in advanced defense-tech R&D",
+      "priority": "Medium"
+    },
+    {
+      "action": "Boost digital presence and counter disinfo campaigns",
+      "priority": "High"
+    }
+  ]
+}

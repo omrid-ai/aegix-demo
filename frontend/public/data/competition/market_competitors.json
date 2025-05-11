@@ -1,0 +1,70 @@
+[
+  {
+    "name": "NeuroBotics Inc.",
+    "market_share": 28.5,
+    "advantage": "Faster market adoption",
+    "url": "https://neurobotics.example.com"
+  },
+  {
+    "name": "SynapseX",
+    "market_share": 33.2,
+    "advantage": "Broader product portfolio",
+    "url": "https://synapsex.ai"
+  },
+  {
+    "name": "RoboIQ",
+    "market_share": 15.1,
+    "advantage": "Advanced analytics",
+    "url": "https://roboiq.com"
+  },
+  {
+    "name": "VisionAI",
+    "market_share": 12.0,
+    "advantage": "Affordable pricing",
+    "url": "https://visionai.org"
+  },
+  {
+    "name": "AlphaML Systems",
+    "market_share": 7.5,
+    "advantage": "Strong developer community",
+    "url": "https://alphaml.tech"
+  },
+  {
+    "name": "DeepCircuit",
+    "market_share": 3.4,
+    "advantage": "Specialized edge deployment"
+  },
+  {
+    "name": "BrainNexus",
+    "market_share": 4.8,
+    "advantage": "Niche academic applications"
+  },
+  {
+    "name": "InnoNet",
+    "market_share": 6.9,
+    "advantage": "Flexible enterprise licensing"
+  },
+  {
+    "name": "AetherMind",
+    "market_share": 21.7,
+    "advantage": "Low latency inference models",
+    "url": "https://aethermind.net"
+  },
+  {
+    "name": "CyberNova",
+    "market_share": 18.3,
+    "advantage": "Military-grade robustness",
+    "url": "https://cybernova.ai"
+  },
+  {
+    "name": "OptiCore AI",
+    "market_share": 24.9,
+    "advantage": "End-to-end platform",
+    "url": "https://opticore.ai"
+  },
+  {
+    "name": "XenoAI",
+    "market_share": 2.3,
+    "advantage": "Emerging in LATAM market"
+  }
+]

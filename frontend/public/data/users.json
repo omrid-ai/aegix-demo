@@ -1,0 +1,11 @@
+[
+    {
+      "id": "cto_001",
+      "name": "Dr. Alex Ravitz",
+      "role": "CTO",
+      "company": "MediCrypt",
+      "risk_flags": ["anonymous activity", "forum controversy"],
+      "platforms": ["LinkedIn", "Twitter"]
+    }
+  ]
+  

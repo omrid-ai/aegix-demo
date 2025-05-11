@@ -1,0 +1,44 @@
+[
+  {
+    "source": "Telegram",
+    "text": "Unverified reports claim breach of government system.",
+    "type": "Critical",
+    "date": "2025-05-06"
+  },
+  {
+    "source": "Reddit",
+    "text": "Concerns over transparency in financial disclosures.",
+    "type": "Critical",
+    "date": "2025-05-07"
+  },
+  {
+    "source": "Twitter",
+    "text": "Ongoing discussion around new cybersecurity bill.",
+    "type": "Neutral",
+    "date": "2025-05-07"
+  },
+  {
+    "source": "News",
+    "text": "Ministry denies rumors of attack; confirms stability.",
+    "type": "Positive",
+    "date": "2025-05-07"
+  },
+  {
+    "source": "Telegram",
+    "text": "Anonymous source alleges breach was larger than reported.",
+    "type": "Critical",
+    "date": "2025-05-08"
+  },
+  {
+    "source": "Twitter",
+    "text": "Experts provide mixed analysis on security preparedness.",
+    "type": "Neutral",
+    "date": "2025-05-08"
+  },
+  {
+    "source": "News",
+    "text": "Authorities confirm no data was exfiltrated.",
+    "type": "Positive",
+    "date": "2025-05-09"
+  }
+]

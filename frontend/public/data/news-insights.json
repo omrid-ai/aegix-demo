@@ -1,0 +1,36 @@
+{
+  "articles": [
+    {
+      "title": "Desert Falcon expands operation in Middle East",
+      "description": "New report highlights growing influence of Desert Falcon group.",
+      "source": {
+        "name": "Al Jazeera"
+      },
+      "publishedAt": "2025-05-04T14:30:00Z"
+    },
+    {
+      "title": "Dark Web activity rising amid global unrest",
+      "description": "Analysts warn of increased darknet discussions around crypto and weapons.",
+      "source": {
+        "name": "BBC"
+      },
+      "publishedAt": "2025-05-05T09:00:00Z"
+    },
+    {
+      "title": "Dark Web forums linked to illegal transactions",
+      "description": "Dark Web forums show growing trend in money laundering techniques.",
+      "source": {
+        "name": "CNN"
+      },
+      "publishedAt": "2025-05-05T18:20:00Z"
+    },
+    {
+      "title": "Polarizing narratives spread on Telegram",
+      "description": "Telegram groups used to promote highly divisive views during elections.",
+      "source": {
+        "name": "The Guardian"
+      },
+      "publishedAt": "2025-05-06T08:45:00Z"
+    }
+  ]
+}

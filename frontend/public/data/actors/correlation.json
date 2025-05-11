@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    { "id": "hamas_unit_8200", "label": "Hamas Unit 8200" },
+    { "id": "hezbollah_infowar", "label": "Hezbollah InfoWar" },
+    { "id": "iranian_botnet", "label": "Iranian Botnet Cluster" },
+    { "id": "telegram_group_gaza24", "label": "Telegram - Gaza24" },
+    { "id": "x_disrupt_info", "label": "X (formerly Twitter) - DisruptInfo" },
+    { "id": "fake_news_portal", "label": "News Site - RealWatchPress" },
+    { "id": "jihadi_forum_ops", "label": "Forum - JihadiOpsNet" }
+  ],
+  "links": [
+    { "source": "hamas_unit_8200", "target": "telegram_group_gaza24" },
+    { "source": "hezbollah_infowar", "target": "x_disrupt_info" },
+    { "source": "iranian_botnet", "target": "x_disrupt_info" },
+    { "source": "iranian_botnet", "target": "fake_news_portal" },
+    { "source": "telegram_group_gaza24", "target": "fake_news_portal" },
+    { "source": "jihadi_forum_ops", "target": "hamas_unit_8200" },
+    { "source": "jihadi_forum_ops", "target": "hezbollah_infowar" }
+  ],
+  "risk_matrix": [
+    {
+      "cluster": "Iranian Botnet Cluster",
+      "risk_level": "High",
+      "note": "Automated propaganda & spoofed IPs"
+    },
+    {
+      "cluster": "Hezbollah InfoWar",
+      "risk_level": "Medium",
+      "note": "Disinfo campaigns during protests"
+    },
+    {
+      "cluster": "Gaza24 Telegram Group",
+      "risk_level": "High",
+      "note": "Amplifies fake casualty reports"
+    },
+    {
+      "cluster": "JihadiOpsNet Forum",
+      "risk_level": "Critical",
+      "note": "Planning attacks & cyber-infiltration"
+    }
+  ],
+  "identity_matches": [
+    {
+      "actor_1": "Hamas Unit 8200",
+      "actor_2": "Telegram - Gaza24",
+      "match_type": "Account Reuse",
+      "confidence": "High"
+    },
+    {
+      "actor_1": "Iranian Botnet Cluster",
+      "actor_2": "News Site - RealWatchPress",
+      "match_type": "Domain Hosting Overlap",
+      "confidence": "Medium"
+    },
+    {
+      "actor_1": "Hezbollah InfoWar",
+      "actor_2": "X - DisruptInfo",
+      "match_type": "Shared Asset Fingerprint",
+      "confidence": "High"
+    }
+  ]
+}

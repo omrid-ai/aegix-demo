@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "type": "Regulatory Breach",
+    "description": "Failure to report virtual asset transactions in accordance with FATF guidelines.",
+    "status": "Open",
+    "exposure": "High",
+    "date": "2024-04-15",
+    "notes": "Ongoing FATF monitoring",
+    "url": "https://www.fatf-gafi.org/en/publications/FatfGeneral/virtual-assets-guidance.html"
+  },
+  {
+    "id": 2,
+    "type": "Ownership Disclosure",
+    "description": "Non-compliance with beneficial ownership disclosure under AMLD5.",
+    "status": "Closed",
+    "exposure": "Medium",
+    "date": "2024-03-20",
+    "notes": "Filed in EU AML report",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32018L0843"
+  },
+  {
+    "id": 3,
+    "type": "Risk Evaluation",
+    "description": "Lack of internal risk evaluation processes as required by FATF.",
+    "status": "InProgress",
+    "exposure": "High",
+    "date": "2024-02-18",
+    "notes": "Pending internal audit",
+    "url": "https://www.fatf-gafi.org/en/publications/FatfGeneral/fatf-recommendations.html"
+  },
+  {
+    "id": 4,
+    "type": "Sanction Screening",
+    "description": "Failure to implement proper sanction screening in compliance programs.",
+    "status": "Open",
+    "exposure": "Medium",
+    "date": "2023-12-10",
+    "notes": "Regulatory fine imposed",
+    "url": "https://www.fatf-gafi.org/en/publications/FatfGeneral/enforcement-cases.html"
+  },
+  {
+    "id": 5,
+    "type": "Internal Policy Gaps",
+    "description": "Company lacks documentation regarding internal controls for AML compliance.",
+    "status": "InProgress",
+    "exposure": "Low",
+    "date": "2024-01-05",
+    "notes": "Policy update in progress",
+    "url": ""
+  }
+]

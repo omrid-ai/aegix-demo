@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Cyber Phoenix",
+    "group": "Dark Hydra",
+    "country": "Russia",
+    "threat_level": "High"
+  },
+  {
+    "name": "Silent Whisper",
+    "group": "Ghost Division",
+    "country": "Iran",
+    "threat_level": "Medium"
+  },
+  {
+    "name": "Black Viper",
+    "group": "Night Falcon",
+    "country": "China",
+    "threat_level": "High"
+  },
+  {
+    "name": "Crimson Jackal",
+    "group": "Lone Wolf Syndicate",
+    "country": "North Korea",
+    "threat_level": "High"
+  },
+  {
+    "name": "Gray Cobra",
+    "group": "Silent Claw",
+    "country": "Turkey",
+    "threat_level": "Low"
+  }
+]

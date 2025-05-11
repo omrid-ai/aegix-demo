@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Cyber attack hits major bank",
+    "description": "A new ransomware strain has taken down servers at a major bank.",
+    "source": {
+      "name": "Financial Times"
+    },
+    "publishedAt": "2025-05-06T10:15:00Z",
+    "sentiment": "Negative",
+    "author": "John Doe",
+    "url": "https://news.example.com/article1"
+  },
+  {
+    "title": "Phishing alert targets government staff",
+    "description": "Emails posing as government requests are spreading malware.",
+    "source": {
+      "name": "BBC News"
+    },
+    "publishedAt": "2025-05-06T09:30:00Z",
+    "sentiment": "Negative",
+    "author": "Alice Smith",
+    "url": "https://news.example.com/article2"
+  },
+  {
+    "title": "Cyber defense tech gains popularity",
+    "description": "Startups in the cyber defense space are attracting investments.",
+    "source": {
+      "name": "TechCrunch"
+    },
+    "publishedAt": "2025-05-05T17:00:00Z",
+    "sentiment": "Positive",
+    "author": "Tech Reporter",
+    "url": "https://news.example.com/article3"
+  }
+]

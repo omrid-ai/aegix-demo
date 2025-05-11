@@ -1,0 +1,709 @@
+{
+  "Business Intelligence": {
+    "subcategories": [
+      {
+        "name": "Market Analysis",
+        "keywords": [
+          "Global market analysis reports",
+          "Underground market research forums",
+          "Emerging markets insights darknet",
+          "Industry market share deep web",
+          "Competitive market analysis tools"
+        ]
+      },
+      {
+        "name": "Competitor Tracking",
+        "keywords": [
+          "Competitor activity tracking tools",
+          "Dark web competitor intelligence",
+          "Corporate espionage forums darknet",
+          "Real-time competitor data analytics",
+          "Hidden competitor insights deep web"
+        ]
+      },
+      {
+        "name": "Strategic Risks",
+        "keywords": [
+          "Strategic risk assessment tools",
+          "Darknet corporate risk forums",
+          "Hidden risks in global trade",
+          "Deep web business risk monitoring",
+          "Predictive risk analytics for businesses"
+        ]
+      },
+      {
+        "name": "Mergers and Acquisitions",
+        "keywords": [
+          "M&A market intelligence tools",
+          "Underground M&A risk analysis",
+          "Dark web merger rumors",
+          "Acquisition targets deep web insights",
+          "M&A compliance and risk tracking"
+        ]
+      },
+      {
+        "name": "Emerging Trends",
+        "keywords": [
+          "Emerging industry trends darknet",
+          "Hidden business opportunities deep web",
+          "Innovative market trends tracking",
+          "Underground tech adoption insights",
+          "Predictive trend analytics tools"
+        ]
+      },
+      {
+        "name": "Business Opportunities",
+        "keywords": [
+          "High-growth business sectors darknet",
+          "Emerging business models deep web",
+          "Underground business opportunity tracking",
+          "Hidden startup ecosystems",
+          "Global expansion opportunities analysis"
+        ]
+      },
+      {
+        "name": "Economic Indicators",
+        "keywords": [
+          "Global economic indicator tracking",
+          "Dark web economic forecasts",
+          "Hidden inflation data deep web",
+          "Real-time economic analytics tools",
+          "Underground financial trends monitoring"
+        ]
+      },
+      {
+        "name": "Industry Reports",
+        "keywords": [
+          "Confidential industry reports darknet",
+          "Global industry trends analysis",
+          "Hidden market research studies",
+          "Industry forecast tools deep web",
+          "Underground business intelligence reports"
+        ]
+      },
+      {
+        "name": "Key Players Analysis",
+        "keywords": [
+          "Key industry players intelligence",
+          "Dark web corporate profiling",
+          "Executive insights deep web",
+          "Real-time key players analysis tools",
+          "Competitor profiling platforms"
+        ]
+      },
+      {
+        "name": "Growth Potential",
+        "keywords": [
+          "Emerging growth markets darknet",
+          "Underground investment opportunities",
+          "Deep web business growth insights",
+          "High-potential industries tracking",
+          "Real-time growth potential analysis"
+        ]
+      },
+      {
+        "name": "Investment Alerts",
+        "keywords": [
+          "Dark web investment schemes tracking",
+          "Real-time investment opportunity alerts",
+          "Underground high-risk investment analysis",
+          "Hidden investment fraud monitoring",
+          "Investment alerts for emerging markets"
+        ]
+      },
+      {
+        "name": "Reputation Monitoring",
+        "keywords": [
+          "Corporate reputation tracking tools",
+          "Dark web brand defamation forums",
+          "Real-time reputation analytics platforms",
+          "Hidden reputation risks deep web",
+          "Executive reputation damage tracking"
+        ]
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Germany",
+      "Israel",
+      "India"
+    ],
+    "sources": [
+      "Darknet",
+      "News",
+      "Forums",
+      "Deep Web"
+    ]
+  },
+  "Law Enforcement": {
+    "subcategories": [
+      {
+        "name": "Criminal Activities",
+        "keywords": [
+          "Real-time criminal activity reports",
+          "Dark web criminal marketplace tracking",
+          "Hidden organized crime networks deep web",
+          "Crime patterns analytics tools",
+          "Global crime hotspot monitoring"
+        ]
+      },
+      {
+        "name": "Suspect Tracking",
+        "keywords": [
+          "Suspect identification tools darknet",
+          "Real-time suspect location trackers",
+          "Hidden suspect profiling deep web",
+          "Dark web tracking of fugitives",
+          "Behavioral analysis for suspects"
+        ]
+      },
+      {
+        "name": "Incident Reports",
+        "keywords": [
+          "Incident report tracking systems",
+          "Dark web discussions of reported crimes",
+          "Hidden emergency incident updates",
+          "Real-time incident analytics tools",
+          "Global incident reporting platforms"
+        ]
+      },
+      {
+        "name": "Fraudulent Activities",
+        "keywords": [
+          "Fraud monitoring systems darknet",
+          "Real-time fraud detection tools",
+          "Hidden fraud schemes deep web",
+          "Financial fraud prevention intelligence",
+          "Dark web financial scam alerts"
+        ]
+      },
+      {
+        "name": "Cyber Threats",
+        "keywords": [
+          "Dark web cyber attack monitoring",
+          "Hidden malware distribution forums",
+          "Cyber threat intelligence platforms",
+          "Real-time phishing scam tracking",
+          "Global cybercrime risk assessments"
+        ]
+      },
+      {
+        "name": "Drug Trafficking",
+        "keywords": [
+          "Drug trafficking networks darknet",
+          "Real-time drug trade monitoring tools",
+          "Hidden narcotics supply chain deep web",
+          "Dark web discussions on drug prices",
+          "Global drug trafficking intelligence"
+        ]
+      },
+      {
+        "name": "Organized Crime",
+        "keywords": [
+          "Dark web organized crime forums",
+          "Real-time syndicate activity tracking",
+          "Hidden mafia operations deep web",
+          "Global cartel risk intelligence tools",
+          "Underground crime syndicate analysis"
+        ]
+      },
+      {
+        "name": "Violent Offenses",
+        "keywords": [
+          "Violent crime hotspot tracking tools",
+          "Darknet forums discussing violent acts",
+          "Hidden violent offender profiles",
+          "Real-time assault and homicide analytics",
+          "Global violent crime reports"
+        ]
+      },
+      {
+        "name": "Intelligence Reports",
+        "keywords": [
+          "Law enforcement intelligence sharing platforms",
+          "Dark web intelligence leak forums",
+          "Hidden law enforcement reports deep web",
+          "Real-time intelligence update tools",
+          "Global criminal intelligence systems"
+        ]
+      },
+      {
+        "name": "Wanted Persons",
+        "keywords": [
+          "Dark web fugitive discussion boards",
+          "Real-time wanted persons tracking",
+          "Hidden fugitive networks deep web",
+          "Global wanted list intelligence tools",
+          "Facial recognition for wanted criminals"
+        ]
+      },
+      {
+        "name": "Traffic Violations",
+        "keywords": [
+          "Real-time traffic violation detection systems",
+          "Hidden vehicle tracking deep web",
+          "Dark web forged license forums",
+          "Automated traffic law enforcement tools",
+          "Global traffic incident monitoring"
+        ]
+      },
+      {
+        "name": "Emergency Alerts",
+        "keywords": [
+          "Real-time public safety alert systems",
+          "Hidden emergency planning documents",
+          "Dark web emergency communication forums",
+          "Global disaster and emergency tracking",
+          "Automated emergency response platforms"
+        ]
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Germany",
+      "Israel",
+      "France"
+    ],
+    "sources": [
+      "Telegram",
+      "Darknet",
+      "Police Reports",
+      "Emergency Feeds"
+    ]
+  },
+  "Political Analysis": {
+    "subcategories": [
+      {
+        "name": "Policy Changes",
+        "keywords": [
+          "Real-time policy change alerts",
+          "Underground policy reform discussions",
+          "Hidden government policy updates darknet",
+          "Deep web policy change trackers",
+          "Global regulatory policy shifts"
+        ]
+      },
+      {
+        "name": "Election Monitoring",
+        "keywords": [
+          "Election fraud monitoring tools darknet",
+          "Real-time election analytics",
+          "Dark web election interference forums",
+          "Election results tracking platforms",
+          "Hidden election insights deep web"
+        ]
+      },
+      {
+        "name": "Geopolitical Risks",
+        "keywords": [
+          "Geopolitical risk intelligence tools",
+          "Darknet geopolitical conflict discussions",
+          "Cross-border tensions monitoring",
+          "Hidden geopolitical trends deep web",
+          "Global geopolitical risk analytics"
+        ]
+      },
+      {
+        "name": "Political Sentiment",
+        "keywords": [
+          "Sentiment analysis of political campaigns",
+          "Dark web public sentiment manipulation",
+          "Hidden political opinion trends deep web",
+          "Real-time political sentiment trackers",
+          "Social media sentiment analysis platforms"
+        ]
+      },
+      {
+        "name": "Legislation Tracking",
+        "keywords": [
+          "Real-time legislation updates tools",
+          "Darknet discussions on new laws",
+          "Hidden legal framework changes deep web",
+          "Global legislative tracking systems",
+          "Policy and legislation databases"
+        ]
+      },
+      {
+        "name": "Regional Stability",
+        "keywords": [
+          "Conflict zones stability monitoring",
+          "Darknet reports on regional conflicts",
+          "Hidden regional risk trends deep web",
+          "Stability forecasts for sensitive areas",
+          "Global stability intelligence platforms"
+        ]
+      },
+      {
+        "name": "Campaign Strategy",
+        "keywords": [
+          "Political campaign strategy tools",
+          "Dark web election campaign tactics",
+          "Hidden campaign funding sources deep web",
+          "Real-time campaign performance analytics",
+          "Competitor campaign tracking platforms"
+        ]
+      },
+      {
+        "name": "Key Political Figures",
+        "keywords": [
+          "Political leaders profiling tools",
+          "Dark web discussions on key politicians",
+          "Hidden key figures influence analysis",
+          "Tracking political leader activities",
+          "Deep web insights on global politicians"
+        ]
+      },
+      {
+        "name": "Government Announcements",
+        "keywords": [
+          "Real-time government statement trackers",
+          "Darknet sources for confidential announcements",
+          "Hidden government updates deep web",
+          "Global government news aggregators",
+          "Policy announcements monitoring tools"
+        ]
+      },
+      {
+        "name": "Public Opinion Trends",
+        "keywords": [
+          "Public opinion monitoring platforms",
+          "Dark web manipulation of public discourse",
+          "Hidden public opinion analytics deep web",
+          "Real-time opinion trend trackers",
+          "Social media opinion monitoring tools"
+        ]
+      },
+      {
+        "name": "Diplomatic Relations",
+        "keywords": [
+          "Global diplomatic ties monitoring tools",
+          "Dark web discussions on diplomatic affairs",
+          "Hidden diplomatic negotiation insights",
+          "Real-time diplomatic relations analytics",
+          "Geopolitical alliances tracking platforms"
+        ]
+      },
+      {
+        "name": "Protest Alerts",
+        "keywords": [
+          "Real-time protest location tracking",
+          "Darknet forums for protest planning",
+          "Hidden civil unrest insights deep web",
+          "Protest risk assessment tools",
+          "Social media protest alert platforms"
+        ]
+      }
+    ],
+    "countries": [
+      "USA",
+      "Germany",
+      "Israel",
+      "France"
+    ],
+    "sources": [
+      "Telegram",
+      "News",
+      "Darknet",
+      "Forums"
+    ]
+     },
+      "Finance": {
+        "subcategories": [
+          {
+            "name": "Financial Monitoring",
+            "keywords": [
+              "overview",
+              "Real-time transaction monitoring",
+              "Suspicious financial activities darknet",
+              "Cross-border money laundering schemes",
+              "Underground cryptocurrency trading platforms",
+              "Dark web financial fraud forums"
+            ]
+          },
+          {
+            "name": "Regulatory Tracking",
+            "keywords": [
+              "Compliance regulations darknet updates",
+              "Dark web policy change alerts",
+              "Offshore regulatory evasion methods",
+              "Global policy tracking tools deep web",
+              "Hidden regulatory risks financial systems"
+            ]
+          },
+          {
+            "name": "Fraud Detection",
+            "keywords": [
+              "Credit card dumps darknet",
+              "Fraudulent payment schemes",
+              "Fake ID vendors darknet",
+              "Identity theft marketplaces deep web",
+              "Phishing campaign detection tools"
+            ]
+          },
+          {
+            "name": "Suspicious",
+            "keywords": [
+              "Suspicious financial transactions report",
+              "Dark web suspicious transaction logs",
+              "AML suspicious activity forums",
+              "Unusual behavior tracking darknet",
+              "High-risk transaction patterns deep web"
+            ]
+          },
+          {
+            "name": "Compliance Check",
+            "keywords": [
+              "Dark web compliance evasion tactics",
+              "Global compliance audit tools",
+              "Regulatory non-compliance alerts",
+              "Compliance gap analysis tools darknet",
+              "Hidden non-compliance risks"
+            ]
+          },
+          {
+            "name": "Compliance",
+            "keywords": [
+              "KYC and AML compliance darknet tools",
+              "Offshore compliance risks deep web",
+              "Compliance bypass strategies darknet",
+              "Real-time compliance monitoring tools",
+              "Dark web regulatory compliance updates"
+            ]
+          },
+          {
+            "name": "Alert Notifications",
+            "keywords": [
+              "Darknet fraud alert services",
+              "Real-time risk alerts financial systems",
+              "Underground alert notification networks",
+              "Fraud detection alert tools",
+              "Automated suspicious alerts darknet"
+            ]
+          },
+          {
+            "name": "Fraud Alerts",
+            "keywords": [
+              "Dark web real-time fraud alerts",
+              "Credit card fraud monitoring",
+              "Fraudulent activity notifications darknet",
+              "Custom fraud alert systems",
+              "Fake transaction detection tools"
+            ]
+          },
+          {
+            "name": "Transaction",
+            "keywords": [
+              "Suspicious transaction tracking darknet",
+              "Real-time transaction patterns analysis",
+              "Cryptocurrency transaction monitoring",
+              "Hidden transaction flows darknet",
+              "Underground payment gateways tracking"
+            ]
+          },
+          {
+            "name": "Regulatory",
+            "keywords": [
+              "Dark web regulatory evasion networks",
+              "Offshore regulatory loopholes",
+              "Hidden global policy violations",
+              "Regulatory compliance darknet tools",
+              "Real-time regulatory updates financial systems"
+            ]
+          },
+          {
+            "name": "Risk Assessment",
+            "keywords": [
+              "Dynamic risk scoring algorithms darknet",
+              "Underground risk analysis tools",
+              "Predictive risk analytics darknet",
+              "High-risk financial schemes darknet",
+              "Risk mitigation deep web solutions"
+            ]
+          }
+        ],
+        "countries": [
+          "USA",
+          "UK",
+          "Israel",
+          "Germany",
+          "France"
+        ],
+        "sources": [
+          "Telegram",
+          "Darknet",
+          "News",
+          "Forums",
+          "Databases"
+        ]
+      },
+  "Communication and Journalism": {
+    "subcategories": [
+      {
+        "name": "Fake News Monitoring",
+        "keywords": [
+          "Fake news detection tools social media",
+          "Dark web disinformation tracking",
+          "Real-time false information alerts",
+          "Underground fake news distribution networks",
+          "Automated content verification platforms"
+        ]
+      },
+      {
+        "name": "Media Sentiment Analysis",
+        "keywords": [
+          "Social media sentiment monitoring tools",
+          "Sentiment trends by region analysis",
+          "Hidden narratives sentiment detection",
+          "Predictive sentiment analytics tools",
+          "Bias detection in media sentiment reports"
+        ]
+      },
+      {
+        "name": "Influencer Tracking",
+        "keywords": [
+          "Key opinion leaders tracking darknet",
+          "Real-time influencer activity alerts",
+          "Influencer impact analytics tools",
+          "Underground influencer disinformation campaigns",
+          "Hidden connections between influencers"
+        ]
+      },
+      {
+        "name": "Disinformation Campaigns",
+        "keywords": [
+          "Dark web coordinated disinformation tools",
+          "Underground narrative manipulation networks",
+          "Fake campaigns tracking on social media",
+          "Real-time disinformation alerts deep web",
+          "Global disinformation mapping platforms"
+        ]
+      },
+      {
+        "name": "Public Opinion Analysis",
+        "keywords": [
+          "Social opinion analytics tools deep web",
+          "Real-time public sentiment monitoring",
+          "Hidden shifts in opinion trends detection",
+          "Predictive public reaction analytics",
+          "Regional public opinion trackers"
+        ]
+      },
+      {
+        "name": "Breaking News Alerts",
+        "keywords": [
+          "Automated breaking news alert systems",
+          "Deep web news leak detection tools",
+          "Underground news sources analysis",
+          "Real-time crisis reporting tools",
+          "Customized breaking news notifications"
+        ]
+      },
+      {
+        "name": "Social Media Trends",
+        "keywords": [
+          "Emerging social media narratives monitoring",
+          "Trend analysis across platforms tools",
+          "Underground social network trend detection",
+          "Hashtag activity tracking real-time",
+          "Predictive trend analytics deep web"
+        ]
+      },
+      {
+        "name": "Crisis Reporting",
+        "keywords": [
+          "Global crisis monitoring platforms",
+          "Real-time crisis impact analytics",
+          "Hidden crisis escalation alerts",
+          "Crisis communication analysis tools",
+          "Underground crisis reporting leaks"
+        ]
+      },
+      {
+        "name": "Media Bias Detection",
+        "keywords": [
+          "Real-time media bias analytics tools",
+          "Predictive media bias trend detection",
+          "Deep web biased content identification",
+          "Hidden media bias detection algorithms",
+          "Media neutrality scoring platforms"
+        ]
+      },
+      {
+        "name": "Journalist Safety Monitoring",
+        "keywords": [
+          "Real-time journalist risk alerts",
+          "Hidden journalist safety threats deep web",
+          "Tools for tracking journalist movements",
+          "Underground threats to journalists monitoring",
+          "Crisis response tools for journalists"
+        ]
+      },
+      {
+        "name": "Audience Engagement Metrics",
+        "keywords": [
+          "Predictive audience engagement analytics",
+          "Underground audience influence networks",
+          "Real-time engagement tracking platforms",
+          "Audience behavior trend tools deep web",
+          "Customized engagement metrics dashboards"
+        ]
+      },
+      {
+        "name": "Emerging Narrative Alerts",
+        "keywords": [
+          "Dark web emerging story detection",
+          "Hidden narrative shifts analytics tools",
+          "Predictive narrative trends monitoring",
+          "Real-time global narrative tracking",
+          "Media narrative impact assessment tools"
+        ]
+      },
+      {
+        "name": "Global Media Coverage Reports",
+        "keywords": [
+          "Comprehensive coverage gap analysis tools",
+          "Deep web media coverage mapping platforms",
+          "Predictive global coverage analytics tools",
+          "Underground media blackout detection",
+          "Hidden media coverage bias reports"
+        ]
+      },
+      {
+        "name": "Platform-Specific Sentiment",
+        "keywords": [
+          "Sentiment analytics for social platforms",
+          "Real-time platform-specific sentiment detection",
+          "Underground platform narrative monitoring",
+          "Predictive sentiment analytics for platforms",
+          "Hidden sentiment manipulation networks"
+        ]
+      },
+      {
+        "name": "Incident Impact Assessment",
+        "keywords": [
+          "Crisis incident impact analytics tools",
+          "Real-time media incident assessment tools",
+          "Predictive incident escalation analytics",
+          "Underground incident reporting platforms",
+          "Comprehensive incident response mapping"
+        ]
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Israel",
+      "France",
+      "Germany"
+    ],
+    "sources": [
+      "Telegram",
+      "Twitter",
+      "News",
+      "Darknet",
+      "Forums"
+    ]
+  }
+}

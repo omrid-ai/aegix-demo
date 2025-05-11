@@ -1,0 +1,17 @@
+[
+  {
+    "name": "NeuroBotics Inc.",
+    "market_share": 28.5,
+    "advantage": "Faster market adoption"
+  },
+  {
+    "name": "SynapseX",
+    "market_share": 33.2,
+    "advantage": "Broader product portfolio"
+  },
+  {
+    "name": "RoboIQ",
+    "market_share": 15.1,
+    "advantage": "Advanced analytics"
+  }
+]

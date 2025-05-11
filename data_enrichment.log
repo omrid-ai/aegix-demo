@@ -1,0 +1,76 @@
+2025-05-09 17:16:23,697 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.7:5000
+2025-05-09 17:16:23,698 - [33mPress CTRL+C to quit[0m
+2025-05-09 17:16:23,698 -  * Restarting with stat
+2025-05-09 17:16:24,901 -  * Debugger is active!
+2025-05-09 17:16:24,902 -  * Debugger PIN: 617-682-219
+2025-05-09 17:16:34,676 - 127.0.0.1 - - [09/May/2025 17:16:34] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:16:34,690 - 127.0.0.1 - - [09/May/2025 17:16:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-09 17:27:13,286 - 127.0.0.1 - - [09/May/2025 17:27:13] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:27:13,294 - 127.0.0.1 - - [09/May/2025 17:27:13] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-09 17:29:00,211 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.7:5000
+2025-05-09 17:29:00,211 - [33mPress CTRL+C to quit[0m
+2025-05-09 17:29:00,212 -  * Restarting with stat
+2025-05-09 17:29:01,425 -  * Debugger is active!
+2025-05-09 17:29:01,426 -  * Debugger PIN: 617-682-219
+2025-05-09 17:29:13,546 - 127.0.0.1 - - [09/May/2025 17:29:13] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:32:43,237 -  * Detected change in 'C:\\Users\\User\\my_project\\aegix_project\\api\\ai_insights_api.py', reloading
+2025-05-09 17:32:43,434 -  * Restarting with stat
+2025-05-09 17:32:44,747 -  * Debugger is active!
+2025-05-09 17:32:44,748 -  * Debugger PIN: 617-682-219
+2025-05-09 17:33:07,661 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.7:5000
+2025-05-09 17:33:07,661 - [33mPress CTRL+C to quit[0m
+2025-05-09 17:33:07,662 -  * Restarting with stat
+2025-05-09 17:33:08,914 -  * Debugger is active!
+2025-05-09 17:33:08,915 -  * Debugger PIN: 617-682-219
+2025-05-09 17:33:17,936 - 127.0.0.1 - - [09/May/2025 17:33:17] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:48:34,840 - 127.0.0.1 - - [09/May/2025 17:48:34] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:48:34,917 - 127.0.0.1 - - [09/May/2025 17:48:34] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:49:04,303 - 127.0.0.1 - - [09/May/2025 17:49:04] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:49:04,317 - 127.0.0.1 - - [09/May/2025 17:49:04] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:49:09,307 - 127.0.0.1 - - [09/May/2025 17:49:09] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 17:53:16,683 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.7:5000
+2025-05-09 17:53:16,683 - [33mPress CTRL+C to quit[0m
+2025-05-09 17:53:16,684 -  * Restarting with stat
+2025-05-09 17:53:17,876 -  * Debugger is active!
+2025-05-09 17:53:17,877 -  * Debugger PIN: 617-682-219
+2025-05-09 17:53:25,102 - 127.0.0.1 - - [09/May/2025 17:53:25] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:02:16,287 - 127.0.0.1 - - [09/May/2025 18:02:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:02:16,296 - 127.0.0.1 - - [09/May/2025 18:02:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:02:20,059 - 127.0.0.1 - - [09/May/2025 18:02:20] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:03:48,283 - 127.0.0.1 - - [09/May/2025 18:03:48] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:03:48,286 - 127.0.0.1 - - [09/May/2025 18:03:48] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:05:08,965 - 127.0.0.1 - - [09/May/2025 18:05:08] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:05:51,285 - 127.0.0.1 - - [09/May/2025 18:05:51] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:05:51,289 - 127.0.0.1 - - [09/May/2025 18:05:51] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:05:56,259 - 127.0.0.1 - - [09/May/2025 18:05:56] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:08:02,261 - 127.0.0.1 - - [09/May/2025 18:08:02] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:08:02,265 - 127.0.0.1 - - [09/May/2025 18:08:02] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:08:07,036 - 127.0.0.1 - - [09/May/2025 18:08:07] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:08:08,023 - 127.0.0.1 - - [09/May/2025 18:08:08] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:08:16,303 - 127.0.0.1 - - [09/May/2025 18:08:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:10:13,252 - 127.0.0.1 - - [09/May/2025 18:10:13] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:10:13,256 - 127.0.0.1 - - [09/May/2025 18:10:13] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:10:16,787 - 127.0.0.1 - - [09/May/2025 18:10:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:10:30,236 - 127.0.0.1 - - [09/May/2025 18:10:30] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:14:30,257 - 127.0.0.1 - - [09/May/2025 18:14:30] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:14:30,262 - 127.0.0.1 - - [09/May/2025 18:14:30] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:18:31,260 - 127.0.0.1 - - [09/May/2025 18:18:31] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:18:31,263 - 127.0.0.1 - - [09/May/2025 18:18:31] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:18:37,564 - 127.0.0.1 - - [09/May/2025 18:18:37] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:22:36,263 - 127.0.0.1 - - [09/May/2025 18:22:36] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:22:36,269 - 127.0.0.1 - - [09/May/2025 18:22:36] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:23:02,770 - 127.0.0.1 - - [09/May/2025 18:23:02] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:27:24,478 - 127.0.0.1 - - [09/May/2025 18:27:24] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-05-09 18:44:28,395 - 127.0.0.1 - - [09/May/2025 18:44:28] "GET /api/ai-insights HTTP/1.1" 200 -

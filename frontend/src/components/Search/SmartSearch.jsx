@@ -8,6 +8,9 @@ const SmartSearch = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedCountries, setSelectedCountries] = useState([]);
   const [selectedSources, setSelectedSources] = useState([]);
+  const [freeQuery, setFreeQuery] = useState("");
+  const [intent, setIntent] = useState("General");
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,7 +18,7 @@ const SmartSearch = () => {
       .then((res) => res.json())
       .then(setSearchConfig)
       .catch((err) => console.error("Failed to load search_config.json", err));
-  }, []); 
+  }, []);
 
   const handleSearch = () => {
     const query = {
@@ -23,6 +26,8 @@ const SmartSearch = () => {
       category: selectedCategory,
       countries: selectedCountries,
       sources: selectedSources,
+      query: freeQuery,
+      intent,
     };
     navigate("/search-results", { state: { query } });
   };
@@ -37,6 +42,33 @@ const SmartSearch = () => {
 
       <Card>
         <CardContent className="space-y-4 p-6">
+
+          {/* Free text query */}
+          <div>
+            <label className="block text-sm mb-1">💬 Free Text Search</label>
+            <input
+              className="w-full bg-gray-800 border border-gray-700 p-2 rounded"
+              placeholder="Enter keywords, company names, or topics..."
+              value={freeQuery}
+              onChange={(e) => setFreeQuery(e.target.value)}
+            />
+          </div>
+
+          {/* Intent */}
+          <div>
+            <label className="block text-sm mb-1">🎯 Search Intent</label>
+            <select
+              className="w-full bg-gray-800 border border-gray-700 p-2 rounded"
+              value={intent}
+              onChange={(e) => setIntent(e.target.value)}
+            >
+              <option value="General">🧠 General</option>
+              <option value="MNA">💼 M&A Review</option>
+              <option value="Threat">⚠️ Threat Actor</option>
+              <option value="Compliance">🧑‍⚖️ Compliance</option>
+            </select>
+          </div>
+
           {/* Sector */}
           <div>
             <label className="block text-sm mb-1">📁 Select Sector</label>

@@ -1,0 +1,15 @@
+{
+  "labels": ["Jan", "Feb", "Mar", "Apr", "May"],
+  "datasets": [
+    {
+      "label": "Financial Risks",
+      "data": [10, 20, 15, 25, 30],
+      "borderColor": "#e63990"
+    },
+    {
+      "label": "Campaign Risks",
+      "data": [5, 12, 9, 18, 22],
+      "borderColor": "#007bff"
+    }
+  ]
+}

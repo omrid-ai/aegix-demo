@@ -1,0 +1,17 @@
+[
+  {
+    "wallet_id": "wallet_1",
+    "risk_score": 9,
+    "transaction_count": 135,
+    "last_seen": "2025-05-09",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "labels": ["High Risk", "Frequent Transfers"],
+    "user_name": "Eli Cohen",
+    "social_links": ["@eliwallet", "https://t.me/eliwallet"],
+    "connections": [
+      { "wallet_id": "wallet_5", "relation": "Frequent Peer" },
+      { "wallet_id": "wallet_3", "relation": "Same IP Cluster" }
+    ]
+  }
+]
